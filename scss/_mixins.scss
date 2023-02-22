@@ -1,22 +1,29 @@
-%fonts-menu {
+/*========================Header__Top=================*/
+
+@mixin fonts-menu ($fz: 15px, $fw: 400, $lh: 18px) {
 font-family: "ProximaNova";
-font-size: 15px;
-font-weight: 400;
-line-height: 18px;
+font-size: $fz;
+font-weight: $fw;
+line-height: $lh;
 color: #495E4C;
 }
 
-@mixin button-active($width: 190px, $height: 55px) {
+@mixin button-active($width: 190px, $height: 55px, $br: 17px, 
+    $fz: 14px, $fw: 400, $lh: 21px) {
     background: #5CCD6A;
     font-family: "Ruberoid";
-    font-size: 15px;
-    font-weight: 400;
-    line-height: 21px;
+    font-size: $fz;
+    font-weight: $fw;
+    line-height: $lh;
     width: $width;
     height: $height;
-    border-radius: 12px;
+    border-radius: $br;
     color: #FFFFFF;
+    box-shadow: inset 2px -2px 12px 0px rgba(34, 111, 33, 0.36);
+    box-shadow: 0px 0px 10px 10px rgba(120, 192, 129, 0.25);
 }
+
+/*========================Header__Top=================*/
 
 @mixin style-heading {
     font-family: "Ruberoid";

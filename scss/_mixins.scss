@@ -1,0 +1,28 @@
+%fonts-menu {
+font-family: "ProximaNova";
+font-size: 15px;
+font-weight: 400;
+line-height: 18px;
+color: #495E4C;
+}
+
+@mixin button-active($width: 190px, $height: 55px) {
+    background: #5CCD6A;
+    font-family: "Ruberoid";
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 21px;
+    width: $width;
+    height: $height;
+    border-radius: 12px;
+    color: #FFFFFF;
+}
+
+@mixin style-heading {
+    font-family: "Ruberoid";
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 74px;
+}
+
+

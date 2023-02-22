@@ -1,0 +1,198 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+a {
+  color: inherit;
+}
+
+/*===========================Шрифты========================*/
+@font-face {
+  font-family: "Ruberoid";
+  font-weight: 400;
+  font-style: normal;
+  src: local("Ruberoid"), url("../fonts/Ruberoid-Regular.woff2") format("woff2"), url("../fonts/Ruberoid-Regular.woff") format("woff"), url("../fonts/Ruberoid-Regular.eot") format("eot");
+  font-display: swap;
+}
+@font-face {
+  font-family: "ProximaNova";
+  font-weight: 400;
+  font-style: normal;
+  src: local("ProximaNova-Regular"), url("../fonts/ProximaNova-Regular.woff2") format("woff2"), url("../fonts/ProximaNova-Regular.woff") format("woff"), url("../fonts/ProximaNova-Regular.eot") format("eot");
+  font-display: swap;
+}
+@font-face {
+  font-family: "ProximaNova";
+  font-weight: 600;
+  font-style: normal;
+  src: local("ProximaNova-Semibold"), url("../fonts/ProximaNova-Semibold.woff2") format("woff2"), url("../fonts/ProximaNova-Semibold.woff") format("woff"), url("../fonts/ProximaNova-Semibold.eot") format("eot");
+  font-display: swap;
+}
+@font-face {
+  font-family: "ProximaNova";
+  font-weight: 700;
+  font-style: bold;
+  src: local("ProximaNova_bold"), url("../fonts/ProximaNova_bold.woff2") format("woff2"), url("../fonts/ProximaNova_bold.woff") format("woff"), url("../fonts/ProximaNova_bold.eot") format("eot");
+  font-display: swap;
+}
+/*===========================Шрифты========================*/
+.header__menu-a {
+  font-family: "ProximaNova";
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #495E4C;
+}
+
+/*========================General======================*/
+/*========================General======================*/
+.wrapper {
+  min-height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1201px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+/*========================Header======================*/
+/*========================Header__Top=================*/
+.header__top {
+  position: relative;
+  padding-top: 26px;
+}
+
+.header__top-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 1350px;
+  margin: 0 auto;
+}
+
+.header__logo {
+  margin-right: 156px;
+}
+
+.header__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header__menu-item {
+  margin-right: 40px;
+}
+
+.header__menu-item:last-child {
+  margin-right: 142px;
+}
+
+.header__top-btn {
+  background: #5CCD6A;
+  font-family: "Ruberoid";
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 21px;
+  width: 190px;
+  height: 55px;
+  border-radius: 12px;
+  color: #FFFFFF;
+}
+
+.haeding {
+  font-family: "Ruberoid";
+  font-size: 64px;
+  font-weight: 400;
+  line-height: 74px;
+}

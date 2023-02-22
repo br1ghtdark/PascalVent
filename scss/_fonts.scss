@@ -1,0 +1,45 @@
+/*===========================Шрифты========================*/
+@font-face {
+    font-family: "Ruberoid";
+    font-weight: 400;
+    font-style: normal;
+    src: local("Ruberoid"),
+            url("../fonts/Ruberoid-Regular.woff2") format('woff2'),
+            url("../fonts/Ruberoid-Regular.woff") format('woff'),
+            url("../fonts/Ruberoid-Regular.eot") format('eot');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "ProximaNova";
+    font-weight: 400;
+    font-style: normal;
+    src: local("ProximaNova-Regular"),
+            url("../fonts/ProximaNova-Regular.woff2") format('woff2'),
+            url("../fonts/ProximaNova-Regular.woff") format('woff'),
+            url("../fonts/ProximaNova-Regular.eot") format('eot');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "ProximaNova";
+    font-weight: 600;
+    font-style: normal;
+    src: local("ProximaNova-Semibold"),
+            url("../fonts/ProximaNova-Semibold.woff2") format('woff2'),
+            url("../fonts/ProximaNova-Semibold.woff") format('woff'),
+            url("../fonts/ProximaNova-Semibold.eot") format('eot');
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "ProximaNova";
+    font-weight: 700;
+    font-style: bold;
+    src: local("ProximaNova_bold"),
+            url("../fonts/ProximaNova_bold.woff2") format('woff2'),
+            url("../fonts/ProximaNova_bold.woff") format('woff'),
+            url("../fonts/ProximaNova_bold.eot") format('eot');
+    font-display: swap;
+}
+/*===========================Шрифты========================*/

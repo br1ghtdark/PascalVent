@@ -1,0 +1,63 @@
+@import "reset";
+@import "fonts";
+@import "mixins";
+
+/*========================General======================*/
+/*========================General======================*/
+
+.wrapper {
+    min-height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.container {
+    max-width: 1201px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+/*========================Header======================*/
+/*========================Header__Top=================*/
+
+.header__top {
+    position: relative;
+    padding-top: 26px;
+}
+
+.header__top-inner {
+    display: flex;
+    align-items: center;
+    max-width: 1350px;
+    margin: 0 auto;
+}
+
+.header__logo {
+    margin-right: 156px;
+}
+
+.header__menu {
+    display: flex;
+}
+
+.header__menu-item {
+    margin-right: 40px;
+}
+
+.header__menu-a {
+    @extend %fonts-menu;
+}
+
+.header__menu-item:last-child {
+    margin-right: 142px;
+}
+
+.header__top-btn {
+    @include button-active;
+}
+
+
+
+.haeding {
+    @include style-heading;
+}

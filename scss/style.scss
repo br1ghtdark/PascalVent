@@ -21,6 +21,10 @@
     @include style-heading;
 }
 
+.title-h2 {
+    @include title-h2
+}
+
 /*========================Header======================*/
 /*========================Header__Top=================*/
 
@@ -149,9 +153,77 @@
     &__body-btn {
         @include button-active ($width: 447px, $height: 85px, $br: 30px,
         $fz: 17px, $fw: 400, $lh: 23px);
-        
+
         &:hover {
             @include btn-hover;
         }
     }
+}
+
+/*========================Services======================*/
+/*========================Services======================*/
+
+.services {
+    &__inner {
+        display: flex;
+    }
+    &__about {
+        max-width: 447px;
+        margin-top: 169px;
+        margin-right: 110px;
+    }
+    &__about-title {
+        position: relative;
+        color: #495E4C;
+        &::before {
+            content: url(../images/services/services_line.svg);
+            position: absolute;
+            right: 0px;
+            bottom: 12px;
+        }
+    }
+    &__about-txt {
+        @include fonts-menu (16px, 400, 26px);
+        color: #848484;
+        margin-top: 22px;
+    }
+    &__text {
+        margin-bottom: 37px;
+    }
+
+/*====================Services__details==================*/
+
+    &__details {
+        display: flex;
+    }
+
+    &__tabs {
+        rotate: -90deg;
+    }
+}
+
+
+.services
+.services
+.services__tabs-fan {
+}
+.services__tabs-cond {
+}
+.services__content {
+}
+.services__content-fan {
+}
+.services__fan-container {
+}
+.services__fan-txt {
+}
+.services__fan-img {
+}
+.services__content-cond {
+}
+.services__cond-container {
+}
+.services__cond-txt {
+}
+.services__cond-img {
 }

@@ -122,6 +122,7 @@ a {
 /*===========================Шрифты========================*/
 /*========================Header__Top=================*/
 /*========================Header__Top=================*/
+/*========================Services=================*/
 /*========================General======================*/
 /*========================General======================*/
 .wrapper {
@@ -141,6 +142,13 @@ a {
   font-size: 64px;
   font-weight: 400;
   line-height: 74px;
+}
+
+.title-h2 {
+  font-family: Ruberoid;
+  font-size: 45px;
+  font-weight: 400;
+  line-height: 60px;
 }
 
 /*========================Header======================*/
@@ -308,4 +316,50 @@ a {
   -webkit-transition: 0.4s;
   -o-transition: 0.4s;
   transition: 0.4s;
+}
+
+/*========================Services======================*/
+/*========================Services======================*/
+.services {
+  /*====================Services__details==================*/
+}
+.services__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.services__about {
+  max-width: 447px;
+  margin-top: 169px;
+  margin-right: 110px;
+}
+.services__about-title {
+  position: relative;
+  color: #495E4C;
+}
+.services__about-title::before {
+  content: url(../images/services/services_line.svg);
+  position: absolute;
+  right: 0px;
+  bottom: 12px;
+}
+.services__about-txt {
+  font-family: "ProximaNova";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  color: #495E4C;
+  color: #848484;
+  margin-top: 22px;
+}
+.services__text {
+  margin-bottom: 37px;
+}
+.services__details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.services__tabs {
+  rotate: -90deg;
 }

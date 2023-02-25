@@ -319,7 +319,7 @@ a {
 }
 
 /*========================Services======================*/
-/*========================Services======================*/
+/*========================Services__about================*/
 .services {
   /*====================Services__details==================*/
 }
@@ -356,10 +356,245 @@ a {
   margin-bottom: 37px;
 }
 .services__details {
+  padding-top: 100px;
+  padding-bottom: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .services__tabs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.services__tabs-fan {
+  position: relative;
+  background: #FFFFFF;
+  font-family: "Ruberoid";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 100%;
+  width: 65px;
+  height: 233px;
+  border-radius: 17px;
+  color: #5CCD6A;
+  -webkit-box-shadow: inset 2px -2px 12px 0px rgba(34, 111, 33, 0.36);
+          box-shadow: inset 2px -2px 12px 0px rgba(34, 111, 33, 0.36);
+  -webkit-box-shadow: 0px 0px 10px 10px rgba(120, 192, 129, 0.25);
+          box-shadow: 0px 0px 10px 10px rgba(120, 192, 129, 0.25);
+  border-radius: 40px 0 0 0;
+  -webkit-box-shadow: -5px -5px 0px 5px #D9FADD;
+          box-shadow: -5px -5px 0px 5px #D9FADD;
+}
+.services__tabs-cond {
+  position: relative;
+  background: #FFFFFF;
+  font-family: "Ruberoid";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 100%;
+  width: 65px;
+  height: 233px;
+  border-radius: 17px;
+  color: #5CCD6A;
+  -webkit-box-shadow: inset 2px -2px 12px 0px rgba(34, 111, 33, 0.36);
+          box-shadow: inset 2px -2px 12px 0px rgba(34, 111, 33, 0.36);
+  -webkit-box-shadow: 0px 0px 10px 10px rgba(120, 192, 129, 0.25);
+          box-shadow: 0px 0px 10px 10px rgba(120, 192, 129, 0.25);
+  border-radius: 0 0 0 40px;
+  -webkit-box-shadow: -5px 5px 0px 5px #D9FADD;
+          box-shadow: -5px 5px 0px 5px #D9FADD;
+}
+.services__btn-def.active {
+  background: #5CCD6A;
+  font-family: "Ruberoid";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 100%;
+  width: 65px;
+  height: 233px;
+  color: #FFFFFF;
+  -webkit-transition: 1s all;
+  -o-transition: 1s all;
+  transition: 1s all;
+}
+.services__btn-fan {
+  position: absolute;
   rotate: -90deg;
+  font-family: "ProximaNova";
+  white-space: nowrap;
+  right: -35px;
+  bottom: 85px;
+}
+.services__btn-fan::after {
+  position: absolute;
+  content: url(../images/services/services_fan.svg);
+  right: -50px;
+  top: -8px;
+}
+.services__btn-cond {
+  position: absolute;
+  rotate: -90deg;
+  font-family: "ProximaNova";
+  white-space: nowrap;
+  right: -35px;
+  bottom: 85px;
+}
+.services__btn-cond::after {
+  position: absolute;
+  content: url(../images/services/services_conditioner.svg);
+  rotate: 90deg;
+  right: -50px;
+  top: -8px;
+}
+.services__content {
+  height: 655px;
+  width: 676px;
+}
+.services__content-block {
+  display: none;
+  position: relative;
+  background: -webkit-gradient(linear, left top, left bottom, from(#D9FADD));
+  background: -o-linear-gradient(#D9FADD);
+  background: linear-gradient(#D9FADD);
+  border-radius: 65px 0 0 65px;
+}
+.services__content-block.active {
+  display: block;
+}
+.services__container {
+  position: relative;
+  max-width: 307px;
+  height: 655px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-left: 89px;
+  padding-top: 113px;
+  padding-bottom: 114px;
+  /* transition: .5s all; */
+}
+.services__fan-txt {
+  font-family: "ProximaNova";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #495E4C;
+}
+.services__fan-pic1::before {
+  position: absolute;
+  content: url(../images/services/fan_1.svg);
+  left: -50px;
+}
+.services__fan-pic2::before {
+  position: absolute;
+  content: url(../images/services/fan_2.svg);
+  left: -50px;
+}
+.services__fan-pic3::before {
+  position: absolute;
+  content: url(../images/services/fan_3.svg);
+  left: -50px;
+}
+.services__fan-pic4::before {
+  position: absolute;
+  content: url(../images/services/fan_4.svg);
+  left: -50px;
+}
+.services__fan-pic5::before {
+  position: absolute;
+  content: url(../images/services/fan_5.svg);
+  left: -50px;
+}
+.services__fan-pic6::before {
+  position: absolute;
+  content: url(../images/services/fan_6.svg);
+  left: -50px;
+}
+.services__fan-img {
+  -webkit-box-shadow: -4px 0px rgba(15, 44, 15, 0.35);
+          box-shadow: -4px 0px rgba(15, 44, 15, 0.35);
+}
+.services__fan-img img {
+  top: 0;
+  right: 0;
+  position: absolute;
+  width: 240px;
+  height: 655px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 61.5% 50%;
+     object-position: 61.5% 50%;
+  border-radius: 65px 0 0 65px;
+  -webkit-box-shadow: -4px 0px 10px 1px rgba(15, 44, 15, 0.35);
+          box-shadow: -4px 0px 10px 1px rgba(15, 44, 15, 0.35);
+}
+.services__cond-txt {
+  font-family: "ProximaNova";
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #495E4C;
+}
+.services__cond-img {
+  -webkit-box-shadow: -4px 0px rgba(15, 44, 15, 0.35);
+          box-shadow: -4px 0px rgba(15, 44, 15, 0.35);
+}
+.services__cond-img img {
+  top: 0;
+  right: 0;
+  position: absolute;
+  width: 240px;
+  height: 655px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 61.5% 50%;
+     object-position: 61.5% 50%;
+  border-radius: 65px 0 0 65px;
+  -webkit-box-shadow: -4px 0px 10px 1px rgba(15, 44, 15, 0.35);
+          box-shadow: -4px 0px 10px 1px rgba(15, 44, 15, 0.35);
+}
+.services__cond-pic1::before {
+  position: absolute;
+  content: url(../images/services/conditioner_1.svg);
+  left: -50px;
+}
+.services__cond-pic2::before {
+  position: absolute;
+  content: url(../images/services/conditioner_2.svg);
+  left: -50px;
+}
+.services__cond-pic3::before {
+  position: absolute;
+  content: url(../images/services/conditioner_3.svg);
+  left: -50px;
+}
+.services__cond-pic4::before {
+  position: absolute;
+  content: url(../images/services/conditioner_4.svg);
+  left: -50px;
+}
+.services__cond-pic5::before {
+  position: absolute;
+  content: url(../images/services/conditioner_5.svg);
+  left: -50px;
+}
+.services__cond-pic6::before {
+  position: absolute;
+  content: url(../images/services/conditioner_6.svg);
+  left: -50px;
 }

@@ -161,7 +161,7 @@
 }
 
 /*========================Services======================*/
-/*========================Services======================*/
+/*========================Services__about================*/
 
 .services {
     &__inner {
@@ -187,6 +187,7 @@
         color: #848484;
         margin-top: 22px;
     }
+
     &__text {
         margin-bottom: 37px;
     }
@@ -194,36 +195,200 @@
 /*====================Services__details==================*/
 
     &__details {
+        padding-top: 100px;
+        padding-bottom: 100px;
         display: flex;
+        align-items: center;
     }
 
     &__tabs {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__tabs-fan {
+        position: relative;
+        @include btn-def ($width: 65px, $height: 233px, $br: 17px, 
+        $fz: 14px, $fw: 400, $lh: 100%);
+        border-radius: 40px 0 0 0;
+        box-shadow: -5px -5px 0px 5px #D9FADD;
+    }
+
+    &__tabs-cond {
+        position: relative;
+        @include btn-def ($width: 65px, $height: 233px, $br: 17px, 
+        $fz: 14px, $fw: 400, $lh: 100%);
+        border-radius: 0 0 0 40px;
+        box-shadow: -5px 5px 0px 5px #D9FADD;
+    }
+
+    &__btn-def.active {
+        @include btn-act ($width: 65px, $height: 233px,
+        $fz: 14px, $fw: 400, $lh: 100%);
+        transition: 1s all;
+    }
+
+    &__btn-fan {
+        position: absolute;
         rotate: -90deg;
+        font-family: "ProximaNova";
+        white-space: nowrap;
+        right: -35px;
+        bottom: 85px;
+        &::after {
+            position: absolute;
+            content: url(../images/services/services_fan.svg);
+            right: -50px;
+            top: -8px;
+        }
+    }
+
+    &__btn-cond {
+        position: absolute;
+        rotate: -90deg;
+        font-family: "ProximaNova";
+        white-space: nowrap;
+        right: -35px;
+        bottom: 85px;
+        &::after {
+            position: absolute;
+            content: url(../images/services/services_conditioner.svg);
+            rotate: 90deg;
+            right: -50px;
+            top: -8px;
+        }
+    }
+
+    &__content {
+        height: 655px;
+        width: 676px;
+    }
+
+    &__content-block {
+        display: none;
+        position: relative;
+        background: linear-gradient(#D9FADD);
+        border-radius: 65px 0 0 65px;
+        &.active {
+            display: block;
+        }
+    }
+
+    &__container {
+        position: relative;
+        max-width: 307px;
+        height: 655px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-left: 89px;
+        padding-top: 113px;
+        padding-bottom: 114px;
+        /* transition: .5s all; */
+    }
+
+    &__fan-txt {
+        @include fonts-menu ($fz: 20px, $fw: 400, $lh: 30px)
+    }
+
+    &__fan-pic1::before {
+        position: absolute;
+        content: url(../images/services/fan_1.svg);
+        left: -50px;
+    }
+    &__fan-pic2::before {
+        position: absolute;
+        content: url(../images/services/fan_2.svg);
+        left: -50px;
+    }
+    &__fan-pic3::before {
+        position: absolute;
+        content: url(../images/services/fan_3.svg);
+        left: -50px;
+    }
+    &__fan-pic4::before {
+        position: absolute;
+        content: url(../images/services/fan_4.svg);
+        left: -50px;
+    }
+    &__fan-pic5::before {
+        position: absolute;
+        content: url(../images/services/fan_5.svg);
+        left: -50px;
+    }
+    &__fan-pic6::before {
+        position: absolute;
+        content: url(../images/services/fan_6.svg);
+        left: -50px;
+    }
+
+    &__fan-img{
+        box-shadow: -4px 0px
+        rgba(15, 44, 15, 0.35);
+    }
+
+    &__fan-img img{
+        top: 0;
+        right: 0;
+        position: absolute;
+        width: 240px;
+        height: 655px;
+        object-fit: cover;
+        object-position: 61.5% 50%;
+        border-radius: 65px 0 0 65px;
+        box-shadow: -4px 0px 10px 1px rgba(15, 44, 15, 0.35);
+    }
+
+    &__cond-txt {
+        @include fonts-menu ($fz: 20px, $fw: 400, $lh: 30px)
+    }
+
+    &__cond-img{
+        box-shadow: -4px 0px
+        rgba(15, 44, 15, 0.35);
+    }
+
+    &__cond-img img{
+        top: 0;
+        right: 0;
+        position: absolute;
+        width: 240px;
+        height: 655px;
+        object-fit: cover;
+        object-position: 61.5% 50%;
+        border-radius: 65px 0 0 65px;
+        box-shadow: -4px 0px 10px 1px rgba(15, 44, 15, 0.35);
+    }
+
+    &__cond-pic1::before {
+        position: absolute;
+        content: url(../images/services/conditioner_1.svg);
+        left: -50px;
+    }
+    &__cond-pic2::before {
+        position: absolute;
+        content: url(../images/services/conditioner_2.svg);
+        left: -50px;
+    }
+    &__cond-pic3::before {
+        position: absolute;
+        content: url(../images/services/conditioner_3.svg);
+        left: -50px;
+    }
+    &__cond-pic4::before {
+        position: absolute;
+        content: url(../images/services/conditioner_4.svg);
+        left: -50px;
+    }
+    &__cond-pic5::before {
+        position: absolute;
+        content: url(../images/services/conditioner_5.svg);
+        left: -50px;
+    }
+    &__cond-pic6::before {
+        position: absolute;
+        content: url(../images/services/conditioner_6.svg);
+        left: -50px;
     }
 }
 
-
-.services
-.services
-.services__tabs-fan {
-}
-.services__tabs-cond {
-}
-.services__content {
-}
-.services__content-fan {
-}
-.services__fan-container {
-}
-.services__fan-txt {
-}
-.services__fan-img {
-}
-.services__content-cond {
-}
-.services__cond-container {
-}
-.services__cond-txt {
-}
-.services__cond-img {
-}

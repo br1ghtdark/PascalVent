@@ -95,44 +95,50 @@
                     </div>
                     <div class="services__details">
                         <div class="services__tabs">
-                            <button class="services__tabs-fan" href="#" type="button">
-                                Система Вентиляции
+                            <button class="services__btn-def services__tabs-fan active" data-tab="#tab_1" type="button">
+                                <p class="services__btn-fan">Система Вентиляции</p>
                             </button>
-                            <button class="services__tabs-cond" href="#" type="button">
-                                Кондиционирование
+                            <button class="services__btn-def services__tabs-cond" data-tab="#tab_2" type="button">
+                                <p class="services__btn-cond"> Кондиционирование</p>
                             </button>
                         </div>
-                        <ul class="services__content">
-                            <li class="services__content-fan">
-                                <div class="services__fan-container">
-                                    <p class="services__fan-txt">Проектирование систем вентиляции любой сложности</p>
-                                    <p class="services__fan-txt">Монтаж приточной вентиляции</p>
-                                    <p class="services__fan-txt">Монтаж вытяжной вентиляции</p>
-                                    <p class="services__fan-txt">Монтаж вентиляции с увлажнением воздуха</p>
-                                    <p class="services__fan-txt">Монтаж вентиляции с рекуператором</p>
-                                    <p class="services__fan-txt">Монтаж вентиляции с осушением для бассейна</p>
+                        <div class="services__content">
+                            <div class="services__content-block active" id="tab_1">
+                                <div class="services__container">
+                                    <p class="services__fan-txt services__fan-pic1">Проектирование систем вентиляции любой сложности</p>
+                                    <p class="services__fan-txt services__fan-pic2">Монтаж приточной вентиляции</p>
+                                    <p class="services__fan-txt services__fan-pic3">Монтаж вытяжной вентиляции</p>
+                                    <p class="services__fan-txt services__fan-pic4">Монтаж вентиляции с увлажнением воздуха</p>
+                                    <p class="services__fan-txt services__fan-pic5">Монтаж вентиляции с рекуператором</p>
+                                    <p class="services__fan-txt services__fan-pic6">Монтаж вентиляции с осушением для бассейна</p>
                                 </div>
-                                <div class="services__fan-img"></div>
-                            </li>
-                            <li class="services__content-cond">
-                                <li class="services__content-cond">
-                                    <div class="services__cond-container">
-                                        <p class="services__cond-txt">Проектирование систем кондиционирования</p>
-                                        <p class="services__cond-txt">Монтаж сплит-систем</p>
-                                        <p class="services__cond-txt">Монтаж мульти сплит-систем</p>
-                                        <p class="services__cond-txt">Монтаж VRV и VRF систем</p>
-                                        <p class="services__cond-txt">Монтаж фанкойлов</p>
-                                        <p class="services__cond-txt">Монтаж настенных, канальных и кассетных кондиционеров</p>
-                                    </div>
-                                    <div class="services__cond-img"></div>
-                                </li>
-                            </li>
-                        </ul>
+                                <div class="services__fan-img">
+                                    <img src="images/services/fan.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="services__content-block" id="tab_2">
+                                <div class="services__container">
+                                    <p class="services__fan-txt services__cond-pic1">Проектирование систем кондиционирования</p>
+                                    <p class="services__fan-txt services__cond-pic2">Монтаж сплит-систем</p>
+                                    <p class="services__fan-txt services__cond-pic3">Монтаж мульти сплит-систем</p>
+                                    <p class="services__fan-txt services__cond-pic4">Монтаж VRV и VRF систем</p>
+                                    <p class="services__fan-txt services__cond-pic5">Монтаж фанкойлов</p>
+                                    <p class="services__fan-txt services__cond-pic6">Монтаж настенных, канальных и кассетных кондиционеров
+                                    </p>
+                                </div>
+                                <div class="services__cond-img">
+                                    <img src="images/services/conditioner.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
                     </div>
+
                 </div>
             </div>
         </section>
     </div>
+
+    <script src="/js/main.js"></script>
 </body>
 
 </html>

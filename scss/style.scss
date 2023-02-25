@@ -196,7 +196,7 @@
 
     &__details {
         padding-top: 100px;
-        padding-bottom: 100px;
+        padding-bottom: 50px;
         display: flex;
         align-items: center;
     }
@@ -390,5 +390,48 @@
         content: url(../images/services/conditioner_6.svg);
         left: -50px;
     }
+}
+
+/*====================Key==================*/
+/*====================Key==================*/
+
+.key {
+    &__inner {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    &__header {
+        position: relative;
+        @include title-h2;
+        max-width: 867px;
+        &::after {
+            position: absolute;
+            content: url(../images/key/key_line.svg);
+            bottom: 10px;
+            right: -10px;
+        }
+    }
+
+    &__content-block {
+        display: grid;
+        grid-template: 1fr 1fr / 1fr 1fr 1fr 1fr;
+    }
+    &__cell-img1 {
+        background: 0px 0px / cover no-repeat url(../images/key/key_1.jpg);
+    }
+}
+
+.key__content {
+}
+
+.key__cell {
+}
+.key
+.key__img-text {
+}
+.key__cell-text {
+}
+.services__img-text {
 }
 

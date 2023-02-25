@@ -23,6 +23,30 @@
     box-shadow: 0px 0px 10px 10px rgba(120, 192, 129, 0.25);
 }
 
+@mixin btn-hover {
+    background: #54E165;
+    transition: .4s;
+}
+
+@mixin title-h2 {
+    font-family: "Ruberoid";
+    font-size: 45px;
+    font-weight: 400;
+    line-height: 60px;
+    color: #495E4C;
+}
+
+/*========================Header__Top=================*/
+
+@mixin style-heading {
+    font-family: "Ruberoid";
+    font-size: 64px;
+    font-weight: 400;
+    line-height: 74px;
+}
+
+/*========================Services=================*/
+
 @mixin btn-act ($width: 190px, $height: 55px,
     $fz: 14px, $fw: 400, $lh: 21px) {
     background: #5CCD6A;
@@ -48,27 +72,4 @@
     color: #5CCD6A;
     box-shadow: inset 2px -2px 12px 0px rgba(34, 111, 33, 0.36);
     box-shadow: 0px 0px 10px 10px rgba(120, 192, 129, 0.25);
-}
-
-@mixin btn-hover {
-    background: #54E165;
-    transition: .4s;
-}
-
-/*========================Header__Top=================*/
-
-@mixin style-heading {
-    font-family: "Ruberoid";
-    font-size: 64px;
-    font-weight: 400;
-    line-height: 74px;
-}
-
-/*========================Services=================*/
-
-@mixin title-h2 {
-    font-family: Ruberoid;
-    font-size: 45px;
-    font-weight: 400;
-    line-height: 60px;
 }

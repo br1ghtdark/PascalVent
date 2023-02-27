@@ -238,6 +238,7 @@ a {
 }
 .header__body-title {
   text-align: right;
+  color: #495E4C;
 }
 .header__body-company {
   margin-top: 5px;
@@ -600,19 +601,30 @@ a {
   left: -50px;
 }
 
-/*====================Key==================*/
-/*====================Key==================*/
+/*=============================Key===============================*/
+/*=============================Key===============================*/
+.key {
+  position: relative;
+}
+.key::after {
+  position: absolute;
+  content: url(../images/key/key_background.svg);
+  left: 100px;
+  top: 100px;
+  z-index: -1;
+}
 .key__inner {
+  position: relative;
   padding-top: 50px;
   padding-bottom: 50px;
 }
 .key__header {
-  position: relative;
   font-family: "Ruberoid";
   font-size: 45px;
   font-weight: 400;
   line-height: 60px;
   color: #495E4C;
+  position: relative;
   max-width: 867px;
 }
 .key__header::after {
@@ -624,7 +636,174 @@ a {
 .key__content-block {
   display: grid;
   grid-template: 1fr 1fr/1fr 1fr 1fr 1fr;
+  height: 306px;
+  gap: 35px 47px;
+  margin-top: 85px;
 }
-.key__cell-img1 {
-  background: 0px 0px/cover no-repeat url(../images/key/key_1.jpg);
+.key__cell {
+  height: 135px;
 }
+.key__cell-container {
+  height: 92px;
+  position: relative;
+  border-radius: 25px 25px 0 0;
+}
+.key__cell-container img {
+  width: 257px;
+  height: 92px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 100% 35%;
+     object-position: 100% 35%;
+  border-radius: 25px 25px 0 0;
+}
+.key__img-text {
+  position: absolute;
+  left: 0;
+  top: 14px;
+  font-family: "ProximaNova";
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 28px;
+  text-align: center;
+  color: #495D4C;
+  height: 28px;
+  width: 119px;
+  background: #D9FADD;
+  border-radius: 0px 10px 10px 0;
+}
+.key__cell-text {
+  height: 43px;
+  font-family: "Ruberoid";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 43px;
+  color: #78C081;
+  border-radius: 0 0 25px 25px;
+  -webkit-box-shadow: 0px 10px 10px 0 rgba(73, 93, 76, 0.1);
+          box-shadow: 0px 10px 10px 0 rgba(73, 93, 76, 0.1);
+  padding-left: 15px;
+  background: #FFFFFF;
+}
+.key__cell-text5 {
+  line-height: 21px;
+}
+
+/*=============================Step===============================*/
+/*=============================Step===============================*/
+.step {
+  padding-top: 50px;
+  /*=============================Step__Content===============================*/
+}
+.step__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.step__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 200px;
+}
+.step__header-title {
+  font-family: "Ruberoid";
+  font-size: 45px;
+  font-weight: 400;
+  line-height: 60px;
+  color: #495E4C;
+  max-width: 516px;
+  white-space: nowrap;
+  position: relative;
+}
+.step__header-title::after {
+  position: absolute;
+  top: -13px;
+  right: -5px;
+  content: url(../images/step/step_line.svg);
+}
+.step__header-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 564px;
+}
+.step__info-title {
+  font-family: "Ruberoid";
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 35px;
+  text-align: left;
+  color: #78C081;
+  padding-bottom: 12px;
+}
+.step__info-block {
+  padding-left: 28px;
+}
+.step__info-text {
+  font-family: "ProximaNova";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.5px;
+  color: #495E4C;
+  position: relative;
+  color: #7CA381;
+  padding-bottom: 10px;
+}
+.step__info-text:last-child {
+  padding-bottom: 0;
+}
+.step__info-text::before {
+  position: absolute;
+  left: -27px;
+  content: url(../images/step/step_fan.svg);
+}
+.step__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 100px;
+  position: relative;
+}
+.step__content::before {
+  position: absolute;
+  top: -150px;
+  right: -140px;
+  content: url(../images/step/step_footer.svg);
+}
+.step__content-text {
+  margin-right: 278px;
+  font-family: "ProximaNova";
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 29px;
+}
+.step__content-text:nth-child(2) {
+  margin-right: 291px;
+}
+.step__content-text:last-child {
+  margin-right: 0;
+}
+
+/* .step
+.step__feedback-inner {
+}
+.step__feedback-header {
+}
+.step__feedback-formula {
+}
+ */

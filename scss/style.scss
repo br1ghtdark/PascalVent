@@ -92,6 +92,7 @@
 
     &__body-title {
         text-align: right;
+        color: #495E4C;
     }
 
     &__body-company {
@@ -392,18 +393,27 @@
     }
 }
 
-/*====================Key==================*/
-/*====================Key==================*/
+/*=============================Key===============================*/
+/*=============================Key===============================*/
 
 .key {
+    position: relative;
+    &::after {
+        position: absolute;
+        content: url(../images/key/key_background.svg);
+        left: 100px;
+        top: 100px;
+        z-index: -1;
+    }
     &__inner {
+        position: relative;
         padding-top: 50px;
         padding-bottom: 50px;
     }
 
     &__header {
-        position: relative;
         @include title-h2;
+        position: relative;
         max-width: 867px;
         &::after {
             position: absolute;
@@ -416,22 +426,162 @@
     &__content-block {
         display: grid;
         grid-template: 1fr 1fr / 1fr 1fr 1fr 1fr;
+        height: 306px;
+        gap: 35px 47px;
+        margin-top: 85px;
     }
-    &__cell-img1 {
-        background: 0px 0px / cover no-repeat url(../images/key/key_1.jpg);
+
+    &__cell {
+        height: 135px;
+    }
+
+    &__cell-container {
+        height: 92px;
+        position: relative;
+        border-radius: 25px 25px 0 0;
+    }
+
+    &__cell-container img {
+        width: 257px;
+        height: 92px;
+        object-fit: cover;
+        object-position: 100% 35%;
+        border-radius: 25px 25px 0 0;
+    }
+
+    &__img-text {
+        position: absolute;
+        left: 0;
+        top: 14px;
+        font-family: "ProximaNova";
+        font-size: 15px;
+        font-weight: 600;
+        line-height: 28px;
+        text-align: center;
+        color: #495D4C;
+        height: 28px;
+        width: 119px;
+        background:#D9FADD;
+        border-radius: 0px 10px 10px 0;
+    }
+
+    &__cell-text {
+        height: 43px;
+        font-family: "Ruberoid";
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 43px;
+        color: #78C081;
+        border-radius: 0 0 25px 25px;
+        box-shadow: 0px 10px 10px 0 rgba(73, 93, 76, 0.1);
+        padding-left: 15px;
+        background: #FFFFFF;
+    }
+    &__cell-text5 {
+        line-height: 21px;
     }
 }
 
-.key__content {
+/*=============================Step===============================*/
+/*=============================Step===============================*/
+
+.step {
+    padding-top: 50px;
+
+    &__inner {
+        display: flex;
+        flex-direction: column;
+    }
+    &__header {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 200px;
+        &-title {
+            @include title-h2;
+            max-width: 516px;
+            white-space: nowrap;
+            position: relative;
+            &::after {
+                position: absolute;
+                top: -13px;
+                right: -5px;
+                content: url(../images/step/step_line.svg);
+            }
+        }
+        &-info {
+            display: flex;
+            flex-direction: column;
+            max-width: 564px;
+        }
+    }
+
+    &__info {
+        &-title {
+            font-family: "Ruberoid";
+            font-size: 26px;
+            font-weight: 400;
+            line-height: 35px;
+            text-align: left;
+            color: #78C081;
+            padding-bottom: 12px;
+        }
+
+        &-block {
+            padding-left: 28px;
+        }
+
+        &-text {
+            @include fonts-menu ($fz: 16px, $fw: 400, $lh: 19.5px);
+            position: relative;
+            color: #7CA381;
+            padding-bottom: 10px;
+            &:last-child {
+                padding-bottom: 0;
+            }
+            &::before {
+                position: absolute;
+                left: -27px;
+                content: url(../images/step/step_fan.svg);
+            }
+        }
+    }
+
+    /*=============================Step__Content===============================*/
+
+    &__content {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 100px;
+        position: relative;
+        &::before {
+            position: absolute;
+            top: -150px;
+            right: -140px;
+            content: url(../images/step/step_footer.svg);
+        }
+        &-text {
+            margin-right: 278px;
+            font-family: "ProximaNova";
+            font-size: 24px;
+            font-weight: 600;
+            line-height: 29px;
+            &:nth-child(2) {
+                margin-right: 291px;
+            }
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+    }
+
+
 }
 
-.key__cell {
+/* .step
+.step__feedback-inner {
 }
-.key
-.key__img-text {
+.step__feedback-header {
 }
-.key__cell-text {
+.step__feedback-formula {
 }
-.services__img-text {
-}
-
+ */

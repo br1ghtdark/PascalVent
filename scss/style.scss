@@ -22,7 +22,7 @@
 }
 
 .title-h2 {
-    @include title-h2
+    @include title-h2;
 }
 
 /*========================Header======================*/
@@ -574,14 +574,50 @@
         }
     }
 
+    /*=============================Step__Content===============================*/
+    &__feedback {
+        background: -150px 0px / cover no-repeat 
+        url("../images/application.svg"),
+        linear-gradient(#D9FADD);
+        &-inner {
+            padding-bottom: 58px;
+        }
+        &-header {
+            @include title-h2;
+            padding-top: 50px;
+            padding-bottom: 33px;
+            color: #495E4C;
+        }
+        &-formula {
+            display: flex;
+            margin-right: 30px;
+            font-family: "ProximaNova";
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 17px;
+            letter-spacing: 0em;
+            text-align: left;
+            color: #7CA381B2;
+            &:nth-child(2) {
+                margin-right: 60px;
+            }
+        }
+        &-btn {
+            @include button-active;
+            &:hover {
+                @include btn-hover;
+            }
+        }
+    }
+    &__formula {
+        height: 57px;
+        width: 290px;
+        border-radius: 15px;
+        padding: 20px;
+    }
 
+    &__btn-txt {
+
+    }
 }
 
-/* .step
-.step__feedback-inner {
-}
-.step__feedback-header {
-}
-.step__feedback-formula {
-}
- */

@@ -694,6 +694,7 @@ a {
 .step {
   padding-top: 50px;
   /*=============================Step__Content===============================*/
+  /*=============================Step__Content===============================*/
 }
 .step__inner {
   display: -webkit-box;
@@ -798,12 +799,64 @@ a {
 .step__content-text:last-child {
   margin-right: 0;
 }
-
-/* .step
+.step__feedback {
+  background: -150px 0px/cover no-repeat url("../images/application.svg"), -webkit-gradient(linear, left top, left bottom, from(#D9FADD));
+  background: -150px 0px/cover no-repeat url("../images/application.svg"), -o-linear-gradient(#D9FADD);
+  background: -150px 0px/cover no-repeat url("../images/application.svg"), linear-gradient(#D9FADD);
+}
 .step__feedback-inner {
+  padding-bottom: 58px;
 }
 .step__feedback-header {
+  font-family: "Ruberoid";
+  font-size: 45px;
+  font-weight: 400;
+  line-height: 60px;
+  color: #495E4C;
+  padding-top: 50px;
+  padding-bottom: 33px;
+  color: #495E4C;
 }
 .step__feedback-formula {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 30px;
+  font-family: "ProximaNova";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgba(124, 163, 129, 0.6980392157);
 }
- */
+.step__feedback-formula:nth-child(2) {
+  margin-right: 60px;
+}
+.step__feedback-btn {
+  background: #5CCD6A;
+  font-family: "Ruberoid";
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  width: 190px;
+  height: 55px;
+  border-radius: 17px;
+  color: #FFFFFF;
+  -webkit-box-shadow: inset 2px -2px 12px 0px rgba(34, 111, 33, 0.36);
+          box-shadow: inset 2px -2px 12px 0px rgba(34, 111, 33, 0.36);
+  -webkit-box-shadow: 0px 0px 10px 10px rgba(120, 192, 129, 0.25);
+          box-shadow: 0px 0px 10px 10px rgba(120, 192, 129, 0.25);
+}
+.step__feedback-btn:hover {
+  background: #54E165;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+}
+.step__formula {
+  height: 57px;
+  width: 290px;
+  border-radius: 15px;
+  padding: 20px;
+}

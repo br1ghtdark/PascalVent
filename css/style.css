@@ -1139,3 +1139,111 @@ a {
   width: 267px;
   height: 294px;
 }
+
+/*==============================Plan==============================*/
+/*==============================Plan==============================*/
+.plan {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  /*==============================Body==============================*/
+}
+.plan__inner {
+  position: relative;
+}
+.plan__inner::before {
+  content: url(../images/plan_background.svg);
+  position: absolute;
+  right: 15%;
+  bottom: -50px;
+}
+.plan__header {
+  font-family: "Ruberoid";
+  font-size: 45px;
+  font-weight: 400;
+  line-height: 60px;
+  color: #495E4C;
+  padding-bottom: 99px;
+}
+.plan__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.plan__body-steps {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.plan__body-end {
+  font-family: "Ruberoid";
+  font-size: 35px;
+  font-weight: 400;
+  line-height: 47px;
+  color: #495E4C;
+  color: #78C081;
+  margin-top: 147px;
+}
+.plan__left {
+  margin-bottom: 220px;
+}
+.plan__left:nth-child(2) {
+  margin-bottom: 172px;
+}
+.plan__left:nth-child(3) {
+  margin-bottom: 0;
+}
+.plan__left-title {
+  font-family: "Ruberoid";
+  font-size: 35px;
+  font-weight: 400;
+  line-height: 47px;
+  color: #495E4C;
+  color: #78C081;
+  margin-bottom: 15px;
+}
+.plan__left-txt {
+  font-family: "ProximaNova";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  color: #495E4C;
+}
+.plan__steps-right {
+  margin-top: 126px;
+}
+.plan__right {
+  text-align: right;
+  margin-bottom: 233px;
+}
+.plan__right:nth-child(2) {
+  margin-bottom: 228px;
+}
+.plan__right:nth-child(3) {
+  margin-bottom: 0;
+}
+.plan__right-title {
+  font-family: "Ruberoid";
+  font-size: 35px;
+  font-weight: 400;
+  line-height: 47px;
+  color: #495E4C;
+  color: #78C081;
+  margin-bottom: 15px;
+}
+.plan__right-txt {
+  font-family: "ProximaNova";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  color: #495E4C;
+}

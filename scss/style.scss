@@ -29,11 +29,10 @@
 /*========================Header__Top=================*/
 
 .header {
-    background: 700px 0px / cover no-repeat 
-    url("../images/header/header__picture.jpg"),
-    linear-gradient(180deg, 
-    #F1F1F1 0%, #F0F2F1 16.25%, #EBEDEC 43.26%, 
-    #E6E8E7 72.5%, #DEE2E1 100%);
+    background: 700px 0px / cover no-repeat url("../images/header/header__picture.jpg"),
+        linear-gradient(180deg,
+            #F1F1F1 0%, #F0F2F1 16.25%, #EBEDEC 43.26%,
+            #E6E8E7 72.5%, #DEE2E1 100%);
 
     &__top {
         position: relative;
@@ -72,11 +71,13 @@
 
     &__top-btn {
         @include button-active;
+
         &:hover {
             @include btn-hover;
         }
     }
-/*========================Header__Body=================*/
+
+    /*========================Header__Body=================*/
 
     &__body {
         padding-top: 85px;
@@ -107,7 +108,7 @@
         @include fonts-menu ($fz: 22px, $fw: 400, $lh: 32px);
         color: #7CA381;
         margin-bottom: 52px;
-        
+
         &::before {
             content: url(../images/header/3_ellipse.svg);
             position: absolute;
@@ -153,7 +154,7 @@
 
     &__body-btn {
         @include button-active ($width: 447px, $height: 85px, $br: 30px,
-        $fz: 17px, $fw: 400, $lh: 23px);
+            $fz: 17px, $fw: 400, $lh: 23px);
 
         &:hover {
             @include btn-hover;
@@ -168,14 +169,17 @@
     &__inner {
         display: flex;
     }
+
     &__about {
         max-width: 447px;
         margin-top: 169px;
         margin-right: 110px;
     }
+
     &__about-title {
         position: relative;
         color: #495E4C;
+
         &::before {
             content: url(../images/services/services_line.svg);
             position: absolute;
@@ -183,6 +187,7 @@
             bottom: 12px;
         }
     }
+
     &__about-txt {
         @include fonts-menu (16px, 400, 26px);
         color: #848484;
@@ -193,7 +198,7 @@
         margin-bottom: 37px;
     }
 
-/*====================Services__details==================*/
+    /*====================Services__details==================*/
 
     &__details {
         padding-top: 100px;
@@ -209,23 +214,23 @@
 
     &__tabs-fan {
         position: relative;
-        @include btn-def ($width: 65px, $height: 233px, $br: 17px, 
-        $fz: 14px, $fw: 400, $lh: 100%);
+        @include btn-def ($width: 65px, $height: 233px, $br: 17px,
+            $fz: 14px, $fw: 400, $lh: 100%);
         border-radius: 40px 0 0 0;
         box-shadow: -5px -5px 0px 5px #D9FADD;
     }
 
     &__tabs-cond {
         position: relative;
-        @include btn-def ($width: 65px, $height: 233px, $br: 17px, 
-        $fz: 14px, $fw: 400, $lh: 100%);
+        @include btn-def ($width: 65px, $height: 233px, $br: 17px,
+            $fz: 14px, $fw: 400, $lh: 100%);
         border-radius: 0 0 0 40px;
         box-shadow: -5px 5px 0px 5px #D9FADD;
     }
 
     &__btn-def.active {
         @include btn-act ($width: 65px, $height: 233px,
-        $fz: 14px, $fw: 400, $lh: 100%);
+            $fz: 14px, $fw: 400, $lh: 100%);
         transition: 1s all;
     }
 
@@ -236,6 +241,7 @@
         white-space: nowrap;
         right: -35px;
         bottom: 85px;
+
         &::after {
             position: absolute;
             content: url(../images/services/services_fan.svg);
@@ -251,6 +257,7 @@
         white-space: nowrap;
         right: -35px;
         bottom: 85px;
+
         &::after {
             position: absolute;
             content: url(../images/services/services_conditioner.svg);
@@ -270,6 +277,7 @@
         position: relative;
         background: linear-gradient(#D9FADD);
         border-radius: 65px 0 0 65px;
+
         &.active {
             display: block;
         }
@@ -297,38 +305,42 @@
         content: url(../images/services/fan_1.svg);
         left: -50px;
     }
+
     &__fan-pic2::before {
         position: absolute;
         content: url(../images/services/fan_2.svg);
         left: -50px;
     }
+
     &__fan-pic3::before {
         position: absolute;
         content: url(../images/services/fan_3.svg);
         left: -50px;
     }
+
     &__fan-pic4::before {
         position: absolute;
         content: url(../images/services/fan_4.svg);
         left: -50px;
     }
+
     &__fan-pic5::before {
         position: absolute;
         content: url(../images/services/fan_5.svg);
         left: -50px;
     }
+
     &__fan-pic6::before {
         position: absolute;
         content: url(../images/services/fan_6.svg);
         left: -50px;
     }
 
-    &__fan-img{
-        box-shadow: -4px 0px
-        rgba(15, 44, 15, 0.35);
+    &__fan-img {
+        box-shadow: -4px 0px rgba(15, 44, 15, 0.35);
     }
 
-    &__fan-img img{
+    &__fan-img img {
         top: 0;
         right: 0;
         position: absolute;
@@ -344,12 +356,11 @@
         @include fonts-menu ($fz: 20px, $fw: 400, $lh: 30px)
     }
 
-    &__cond-img{
-        box-shadow: -4px 0px
-        rgba(15, 44, 15, 0.35);
+    &__cond-img {
+        box-shadow: -4px 0px rgba(15, 44, 15, 0.35);
     }
 
-    &__cond-img img{
+    &__cond-img img {
         top: 0;
         right: 0;
         position: absolute;
@@ -366,26 +377,31 @@
         content: url(../images/services/conditioner_1.svg);
         left: -50px;
     }
+
     &__cond-pic2::before {
         position: absolute;
         content: url(../images/services/conditioner_2.svg);
         left: -50px;
     }
+
     &__cond-pic3::before {
         position: absolute;
         content: url(../images/services/conditioner_3.svg);
         left: -50px;
     }
+
     &__cond-pic4::before {
         position: absolute;
         content: url(../images/services/conditioner_4.svg);
         left: -50px;
     }
+
     &__cond-pic5::before {
         position: absolute;
         content: url(../images/services/conditioner_5.svg);
         left: -50px;
     }
+
     &__cond-pic6::before {
         position: absolute;
         content: url(../images/services/conditioner_6.svg);
@@ -398,6 +414,7 @@
 
 .key {
     position: relative;
+
     &::after {
         position: absolute;
         content: url(../images/key/key_background.svg);
@@ -405,6 +422,7 @@
         top: 100px;
         z-index: -1;
     }
+
     &__inner {
         position: relative;
         padding-top: 50px;
@@ -415,6 +433,7 @@
         @include title-h2;
         position: relative;
         max-width: 867px;
+
         &::after {
             position: absolute;
             content: url(../images/key/key_line.svg);
@@ -461,7 +480,7 @@
         color: #495D4C;
         height: 28px;
         width: 119px;
-        background:#D9FADD;
+        background: #D9FADD;
         border-radius: 0px 10px 10px 0;
     }
 
@@ -477,6 +496,7 @@
         padding-left: 15px;
         background: #FFFFFF;
     }
+
     &__cell-text5 {
         line-height: 21px;
     }
@@ -493,15 +513,18 @@
         display: flex;
         flex-direction: column;
     }
+
     &__header {
         display: flex;
         justify-content: space-between;
         padding-bottom: 200px;
+
         &-title {
             @include title-h2;
             max-width: 516px;
             white-space: nowrap;
             position: relative;
+
             &::after {
                 position: absolute;
                 top: -13px;
@@ -509,6 +532,7 @@
                 content: url(../images/step/step_line.svg);
             }
         }
+
         &-info {
             display: flex;
             flex-direction: column;
@@ -536,9 +560,11 @@
             position: relative;
             color: #7CA381;
             padding-bottom: 10px;
+
             &:last-child {
                 padding-bottom: 0;
             }
+
             &::before {
                 position: absolute;
                 left: -27px;
@@ -554,21 +580,25 @@
         justify-content: center;
         padding-bottom: 100px;
         position: relative;
+
         &::before {
             position: absolute;
             top: -150px;
             right: -140px;
             content: url(../images/step/step_footer.svg);
         }
+
         &-text {
             margin-right: 278px;
             font-family: "ProximaNova";
             font-size: 24px;
             font-weight: 600;
             line-height: 29px;
+
             &:nth-child(2) {
                 margin-right: 291px;
             }
+
             &:last-child {
                 margin-right: 0;
             }
@@ -577,18 +607,20 @@
 
     /*=============================Step__Content===============================*/
     &__feedback {
-        background: -150px 0px / cover no-repeat 
-        url("../images/application.svg"),
-        linear-gradient(#D9FADD);
+        background: -150px 0px / cover no-repeat url("../images/application.svg"),
+            linear-gradient(#D9FADD);
+
         &-inner {
             padding-bottom: 58px;
         }
+
         &-header {
             @include title-h2;
             padding-top: 50px;
             padding-bottom: 33px;
             color: #495E4C;
         }
+
         &-formula {
             display: flex;
             margin-right: 30px;
@@ -599,17 +631,21 @@
             letter-spacing: 0em;
             text-align: left;
             color: #7CA381B2;
+
             &:nth-child(2) {
                 margin-right: 60px;
             }
         }
+
         &-btn {
             @include button-active;
+
             &:hover {
                 @include btn-hover;
             }
         }
     }
+
     &__formula {
         height: 57px;
         width: 290px;
@@ -617,9 +653,7 @@
         padding: 20px;
     }
 
-    &__btn-txt {
-
-    }
+    &__btn-txt {}
 }
 
 /*=============================About===============================*/
@@ -641,6 +675,7 @@
         border-radius: 50px;
         background: #FFF;
         box-shadow: 0px 0px 10px 0px rgba(73, 93, 76, 0.1);
+
         &::before {
             content: url(../images/about_ellipse.svg);
             position: absolute;
@@ -682,8 +717,9 @@
 
     &__txt {
         padding-bottom: 34px;
+
         &-bold {
-        @include fonts-menu ($fz: 16px, $fw: 600, $lh: 26px);
+            @include fonts-menu ($fz: 16px, $fw: 600, $lh: 26px);
         }
     }
 
@@ -732,9 +768,6 @@
     padding-top: 50px;
     padding-bottom: 50px;
 
-
-
-
     &__inner {
         display: flex;
         justify-content: space-between;
@@ -772,7 +805,7 @@
 
         &-btn {
             @include button-active ($width: 447px, $height: 85px, $br: 30px,
-            $fz: 17px, $fw: 400, $lh: 23px);
+                $fz: 17px, $fw: 400, $lh: 23px);
             margin-top: 50px;
 
             &:hover {
@@ -820,6 +853,7 @@
         &-lt {
             margin-right: 30px;
             margin-bottom: 20px;
+
             & img {
                 object-fit: cover;
                 object-position: 35% 50%;
@@ -830,7 +864,7 @@
             }
         }
 
-        &-lb img{
+        &-lb img {
             object-fit: cover;
             object-position: 35% 50%;
             box-shadow: 0px 0px 10px 0px rgba(26, 26, 26, 0.3);
@@ -839,7 +873,7 @@
             height: 424px;
         }
 
-        &-rt img{
+        &-rt img {
             object-fit: cover;
             object-position: 35% 50%;
             box-shadow: 0px 0px 10px 0px rgba(26, 26, 26, 0.3);
@@ -864,9 +898,94 @@
 
 }
 
+/*==============================Plan==============================*/
+/*==============================Plan==============================*/
 
-.comfort__images-left {
-}
+.plan {
+    padding-top: 50px;
+    padding-bottom: 50px;
 
-.comfort__images-right {
+    &__inner {
+        position: relative;
+
+        &::before {
+            content: url(../images/plan_background.svg);
+            position: absolute;
+            right: 15%;
+            bottom: -50px;
+        }
+    }
+
+    &__header {
+        @include title-h2;
+        padding-bottom: 99px;
+    }
+
+    /*==============================Body==============================*/
+
+    &__body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &-steps {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &-end {
+            @include fonts-rub ($fz: 35px, $fw: 400, $lh: 47px);
+            color: #78C081;
+            margin-top: 147px;
+        }
+    }
+
+    &__left {
+        margin-bottom: 220px;
+
+        &:nth-child(2) {
+            margin-bottom: 172px;
+        }
+
+        &:nth-child(3) {
+            margin-bottom: 0;
+        }
+
+        &-title {
+            @include fonts-rub ($fz: 35px, $fw: 400, $lh: 47px);
+            color: #78C081;
+            margin-bottom: 15px;
+        }
+
+        &-txt {
+            @include fonts-menu ($fz: 16px, $fw: 400, $lh: 26px);
+        }
+    }
+
+    &__steps-right {
+        margin-top: 126px;
+    }
+
+    &__right {
+        text-align: right;
+        margin-bottom: 233px;
+
+        &:nth-child(2) {
+            margin-bottom: 228px;
+        }
+
+        &:nth-child(3) {
+            margin-bottom: 0;
+        }
+
+        &-title {
+            @include fonts-rub ($fz: 35px, $fw: 400, $lh: 47px);
+            color: #78C081;
+            margin-bottom: 15px;
+        }
+
+        &-txt {
+            @include fonts-menu ($fz: 16px, $fw: 400, $lh: 26px);
+        }
+    }
 }

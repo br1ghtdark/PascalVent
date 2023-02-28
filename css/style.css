@@ -1155,6 +1155,7 @@ a {
   position: absolute;
   right: 15%;
   bottom: -50px;
+  z-index: -1;
 }
 .plan__header {
   font-family: "Ruberoid";

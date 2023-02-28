@@ -973,3 +973,169 @@ a {
   color: #7CA381;
   max-width: 198px;
 }
+
+/*==============================Comfort==============================*/
+/*==============================Comfort==============================*/
+.comfort {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.comfort__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.comfort__content {
+  max-width: 520px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.comfort__content-header {
+  font-family: "Ruberoid";
+  font-size: 45px;
+  font-weight: 400;
+  line-height: 60px;
+  color: #495E4C;
+}
+.comfort__content-svg {
+  margin-top: 28px;
+  margin-bottom: 35px;
+}
+.comfort__content-list {
+  font-family: "ProximaNova";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.5px;
+  color: #495E4C;
+  color: #7CA381;
+  padding-left: 25px;
+}
+.comfort__content-txt {
+  font-family: "ProximaNova";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  color: #495E4C;
+  color: #848484;
+}
+.comfort__content-txt span {
+  font-weight: 600;
+}
+.comfort__content-btn {
+  background: #5CCD6A;
+  font-family: "Ruberoid";
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 23px;
+  width: 447px;
+  height: 85px;
+  border-radius: 30px;
+  color: #FFFFFF;
+  -webkit-box-shadow: inset 2px -2px 12px 0px rgba(34, 111, 33, 0.36);
+          box-shadow: inset 2px -2px 12px 0px rgba(34, 111, 33, 0.36);
+  -webkit-box-shadow: 0px 0px 10px 10px rgba(120, 192, 129, 0.25);
+          box-shadow: 0px 0px 10px 10px rgba(120, 192, 129, 0.25);
+  margin-top: 50px;
+}
+.comfort__content-btn:hover {
+  background: #54E165;
+  -webkit-transition: 0.4s;
+  -o-transition: 0.4s;
+  transition: 0.4s;
+}
+.comfort__list-item {
+  position: relative;
+  padding-bottom: 15px;
+}
+.comfort__list-item::before {
+  content: url(../images/comfort/comfort_circle.svg);
+  position: absolute;
+  left: -25px;
+}
+.comfort__list-item:last-child {
+  padding-bottom: 25px;
+}
+.comfort__svg {
+  margin-right: 15px;
+}
+.comfort__svg:last-child {
+  margin-right: 0;
+}
+.comfort__images {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 575px;
+}
+.comfort__images::before {
+  content: url(../images/comfort/comfort_Ellipse.svg);
+  position: absolute;
+  z-index: -1;
+  left: -250px;
+}
+.comfort__images-lt {
+  margin-right: 30px;
+  margin-bottom: 20px;
+}
+.comfort__images-lt img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 35% 50%;
+     object-position: 35% 50%;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(26, 26, 26, 0.3);
+          box-shadow: 0px 0px 10px 0px rgba(26, 26, 26, 0.3);
+  border-radius: 39px;
+  width: 273px;
+  height: 358px;
+}
+.comfort__images-lb img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 35% 50%;
+     object-position: 35% 50%;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(26, 26, 26, 0.3);
+          box-shadow: 0px 0px 10px 0px rgba(26, 26, 26, 0.3);
+  border-radius: 39px;
+  width: 273px;
+  height: 424px;
+}
+.comfort__images-rt img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 35% 50%;
+     object-position: 35% 50%;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(26, 26, 26, 0.3);
+          box-shadow: 0px 0px 10px 0px rgba(26, 26, 26, 0.3);
+  border-radius: 39px;
+  width: 267px;
+  height: 350px;
+}
+.comfort__images-rb {
+  margin-top: 30px;
+}
+.comfort__images-rb img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 35% 50%;
+     object-position: 35% 50%;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(26, 26, 26, 0.3);
+          box-shadow: 0px 0px 10px 0px rgba(26, 26, 26, 0.3);
+  border-radius: 39px;
+  width: 267px;
+  height: 294px;
+}

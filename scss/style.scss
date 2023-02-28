@@ -725,3 +725,148 @@
     }
 }
 
+/*==============================Comfort==============================*/
+/*==============================Comfort==============================*/
+
+.comfort {
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+
+
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__content {
+        max-width: 520px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        &-header {
+            @include title-h2;
+        }
+
+        &-svg {
+            margin-top: 28px;
+            margin-bottom: 35px;
+        }
+
+        &-list {
+            @include fonts-menu ($fz: 16px, $fw: 400, $lh: 19.5px);
+            color: #7CA381;
+            padding-left: 25px;
+        }
+
+        &-txt {
+            @include fonts-menu ($fz: 16px, $fw: 400, $lh: 26px);
+            color: #848484;
+
+            & span {
+                font-weight: 600;
+            }
+        }
+
+        &-btn {
+            @include button-active ($width: 447px, $height: 85px, $br: 30px,
+            $fz: 17px, $fw: 400, $lh: 23px);
+            margin-top: 50px;
+
+            &:hover {
+                @include btn-hover;
+            }
+        }
+    }
+
+    &__list-item {
+        position: relative;
+        padding-bottom: 15px;
+
+        &::before {
+            content: url(../images/comfort/comfort_circle.svg);
+            position: absolute;
+            left: -25px;
+        }
+
+        &:last-child {
+            padding-bottom: 25px;
+        }
+    }
+
+    &__svg {
+        margin-right: 15px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+
+    &__images {
+        position: relative;
+        display: flex;
+        align-items: center;
+        width: 575px;
+
+        &::before {
+            content: url(../images/comfort/comfort_Ellipse.svg);
+            position: absolute;
+            z-index: -1;
+            left: -250px;
+        }
+
+        &-lt {
+            margin-right: 30px;
+            margin-bottom: 20px;
+            & img {
+                object-fit: cover;
+                object-position: 35% 50%;
+                box-shadow: 0px 0px 10px 0px rgba(26, 26, 26, 0.3);
+                border-radius: 39px;
+                width: 273px;
+                height: 358px;
+            }
+        }
+
+        &-lb img{
+            object-fit: cover;
+            object-position: 35% 50%;
+            box-shadow: 0px 0px 10px 0px rgba(26, 26, 26, 0.3);
+            border-radius: 39px;
+            width: 273px;
+            height: 424px;
+        }
+
+        &-rt img{
+            object-fit: cover;
+            object-position: 35% 50%;
+            box-shadow: 0px 0px 10px 0px rgba(26, 26, 26, 0.3);
+            border-radius: 39px;
+            width: 267px;
+            height: 350px;
+        }
+
+        &-rb {
+            margin-top: 30px;
+
+            & img {
+                object-fit: cover;
+                object-position: 35% 50%;
+                box-shadow: 0px 0px 10px 0px rgba(26, 26, 26, 0.3);
+                border-radius: 39px;
+                width: 267px;
+                height: 294px;
+            }
+        }
+    }
+
+}
+
+
+.comfort__images-left {
+}
+
+.comfort__images-right {
+}

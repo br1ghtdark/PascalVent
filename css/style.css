@@ -693,6 +693,7 @@ a {
 /*=============================Step===============================*/
 .step {
   padding-top: 50px;
+  padding-bottom: 50px;
   /*=============================Step__Content===============================*/
   /*=============================Step__Content===============================*/
 }
@@ -859,4 +860,116 @@ a {
   width: 290px;
   border-radius: 15px;
   padding: 20px;
+}
+/*=============================About===============================*/
+.about {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  /*=========================About__info============================*/
+}
+.about__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.about__header {
+  position: relative;
+  max-width: 531px;
+  padding: 45px 33px 45px 33px;
+  border-radius: 50px;
+  background: #FFF;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(73, 93, 76, 0.1);
+          box-shadow: 0px 0px 10px 0px rgba(73, 93, 76, 0.1);
+}
+.about__header::before {
+  content: url(../images/about_ellipse.svg);
+  position: absolute;
+  z-index: -1;
+  top: -25%;
+  left: -25%;
+}
+.about__header::after {
+  content: "PASCAL VENT";
+  position: absolute;
+  font-family: "Ruberoid";
+  font-size: 21px;
+  font-weight: 400;
+  line-height: 28px;
+  color: #78C081;
+  top: 61px;
+  left: calc(50% - 78px);
+}
+.about__header-title {
+  font-family: "Ruberoid";
+  font-size: 45px;
+  font-weight: 400;
+  line-height: 60px;
+  color: #495E4C;
+  position: relative;
+  padding-bottom: 20px;
+}
+.about__header-title::after {
+  content: url(../images/about_line.svg);
+  position: absolute;
+  left: 33%;
+  top: -2px;
+}
+.about__header-txt {
+  font-family: "ProximaNova";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  color: #495E4C;
+  color: #848484;
+}
+.about__txt {
+  padding-bottom: 34px;
+}
+.about__txt-bold {
+  font-family: "ProximaNova";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 26px;
+  color: #495E4C;
+}
+.about__info {
+  display: grid;
+  grid-template: 1fr 1fr/1fr 1fr;
+  gap: 90px;
+  height: 320px;
+}
+.about__info-cell {
+  position: relative;
+  text-align: center;
+  height: 115px;
+}
+.about__info-cell::before {
+  content: url(../images/about_ellipse-grid.svg);
+  position: absolute;
+  top: -100px;
+  left: -50px;
+}
+.about__cell-title {
+  font-family: "Ruberoid";
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 35.5px;
+  color: #495E4C;
+  color: #78C081;
+  padding-bottom: 15px;
+}
+.about__cell-txt {
+  font-family: "ProximaNova";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  color: #495E4C;
+  color: #7CA381;
+  max-width: 198px;
 }

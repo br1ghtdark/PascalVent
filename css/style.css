@@ -1248,3 +1248,171 @@ a {
   line-height: 26px;
   color: #495E4C;
 }
+
+/*==============================Portfolio==============================*/
+/*==============================Portfolio==============================*/
+.portfolio {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  /*===========================Portfolio_Body============================*/
+}
+.portfolio__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 111px;
+}
+.portfolio__header-title {
+  font-family: "Ruberoid";
+  font-size: 45px;
+  font-weight: 400;
+  line-height: 60px;
+  color: #495E4C;
+  max-width: 402px;
+}
+.portfolio__header-txt {
+  font-family: "ProximaNova";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  color: #495E4C;
+  color: #848484;
+  max-width: 641px;
+}
+.portfolio__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  width: 1305px;
+  height: 456px;
+}
+.portfolio__arrows {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.portfolio__arrow {
+  height: 34px;
+  width: 34px;
+  background-color: #5CCD6A;
+  border-radius: 50%;
+}
+.portfolio__arrow-prev {
+  position: relative;
+  margin-right: 30px;
+}
+.portfolio__arrow-prev span:first-child {
+  position: absolute;
+  display: block;
+  height: 10px;
+  width: 3.5px;
+  border-radius: 3px;
+  background-color: #FF6433;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+  rotate: 45deg;
+  top: 32.5%;
+  left: calc(50% - 2px);
+}
+.portfolio__arrow-prev span:last-child {
+  position: absolute;
+  display: block;
+  height: 10px;
+  width: 3.5px;
+  border-radius: 3px;
+  background-color: #FF6433;
+  rotate: -45deg;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+  top: 47.5%;
+  left: calc(50% - 2px);
+}
+.portfolio__arrow-next {
+  position: relative;
+}
+.portfolio__arrow-next span:first-child {
+  position: absolute;
+  display: block;
+  height: 10px;
+  width: 3.5px;
+  border-radius: 3px;
+  background-color: #FF6433;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+  rotate: 45deg;
+  top: 47.5%;
+  left: calc(50% - 0.75px);
+}
+.portfolio__arrow-next span:last-child {
+  position: absolute;
+  display: block;
+  height: 10px;
+  width: 3.5px;
+  border-radius: 3px;
+  background-color: #FF6433;
+  rotate: -45deg;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+  top: 32.5%;
+  left: calc(50% - 0.75px);
+}
+.portfolio__content {
+  position: relative;
+  margin-right: 30px;
+  max-width: 270px;
+}
+.portfolio__content img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 270px;
+  height: 456px;
+  border-radius: 35px;
+}
+.portfolio__content-logo {
+  position: absolute;
+  left: 0;
+  top: 35px;
+  width: 169px;
+  height: 49px;
+  border-radius: 0 15px 15px 0;
+  background: 30px 7px/70% 70% no-repeat url("../images/logo.svg"), -webkit-gradient(linear, left top, left bottom, from(#D9FADD));
+  background: 30px 7px/70% 70% no-repeat url("../images/logo.svg"), -o-linear-gradient(#D9FADD);
+  background: 30px 7px/70% 70% no-repeat url("../images/logo.svg"), linear-gradient(#D9FADD);
+}
+.portfolio__content-block {
+  position: absolute;
+  bottom: 45px;
+  left: 40px;
+}
+.portfolio__content-title {
+  font-family: "Ruberoid";
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 34px;
+  color: #495E4C;
+  color: #FFFFFF;
+}
+.portfolio__content-txt {
+  display: none;
+  font-family: "ProximaNova";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19.5px;
+  color: #495E4C;
+  color: #FFFFFF;
+}
+
+.slick-center img {
+  width: 500px;
+}

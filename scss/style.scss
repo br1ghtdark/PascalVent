@@ -990,3 +990,165 @@
         }
     }
 }
+
+/*==============================Portfolio==============================*/
+/*==============================Portfolio==============================*/
+
+.portfolio {
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    &__inner {
+    }
+
+    &__header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 111px;
+
+        &-title {
+            @include title-h2;
+            max-width: 402px;
+        }
+
+        &-txt {
+            @include fonts-menu ($fz: 16px, $fw: 400, $lh: 26px);
+            color: #848484;
+            max-width: 641px;
+        }
+    }
+
+    /*===========================Portfolio_Body============================*/
+
+    &__body {
+        display: flex;
+        position: absolute;
+        width: 1305px;
+        height: 456px;
+
+    }
+
+    &__arrows {
+        display: flex;
+    }
+
+    &__arrow {
+        height: 34px;
+        width: 34px;
+        background-color: #5CCD6A;
+        border-radius: 50%;
+
+        &-prev {
+            position: relative;
+            margin-right: 30px;
+
+            & span:first-child {
+                position: absolute;
+                display: block;
+                height: 10px;
+                width: 3.5px;
+                border-radius: 3px;
+                background-color: #FF6433;
+                transition: all 0.4s;
+                rotate: 45deg;
+                top: 32.5%;
+                left: calc(50% - 2px);
+            }
+    
+            & span:last-child {
+                position: absolute;
+                display: block;
+                height: 10px;
+                width: 3.5px;
+                border-radius: 3px;
+                background-color: #FF6433;
+                rotate: -45deg;
+                transition: all 0.4s;
+                top: 47.5%;
+                left: calc(50% - 2px);
+            }
+        }
+
+        &-next {
+            position: relative;
+
+            & span:first-child {
+                position: absolute;
+                display: block;
+                height: 10px;
+                width: 3.5px;
+                border-radius: 3px;
+                background-color: #FF6433;
+                transition: all 0.4s;
+                rotate: 45deg;
+                top: 47.5%;
+                left: calc(50% - .75px);
+            }
+    
+            & span:last-child {
+                position: absolute;
+                display: block;
+                height: 10px;
+                width: 3.5px;
+                border-radius: 3px;
+                background-color: #FF6433;
+                rotate: -45deg;
+                transition: all 0.4s;
+                top: 32.5%;
+                left: calc(50% - .75px);
+            }
+        }
+
+
+    }
+    
+
+    &__content {
+        position: relative;
+        margin-right: 30px;
+        max-width: 270px;
+
+        & img {
+            object-fit: cover;
+            width: 270px;
+            height: 456px;
+            border-radius: 35px;
+        }
+
+        &-logo {
+            position: absolute;
+            left: 0;
+            top: 35px;
+            width: 169px;
+            height: 49px;
+            border-radius: 0 15px 15px 0;
+            background: 30px 7px / 70% 70% no-repeat 
+            url("../images/logo.svg"),
+            linear-gradient(#D9FADD);
+        }
+
+        &-block {
+            position: absolute;
+            bottom: 45px;
+            left: 40px;
+        }
+
+        &-title {
+            @include fonts-rub ($fz: 24px, $fw: 400, $lh: 34px);
+            color: #FFFFFF;
+        }
+
+        &-txt {
+            display: none;
+            @include fonts-menu ($fz: 16px, $fw: 400, $lh: 19.5px);
+            color: #FFFFFF;
+        }
+    }
+}
+
+.slick-center img {
+    width: 500px;
+}
+
+

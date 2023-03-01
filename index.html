@@ -5,9 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/fonts.css">
-    <link rel="stylesheet" href="./scss/_reset.scss">
-    <link rel="stylesheet" href="./css/style.min.css">
+    <link rel="stylesheet" href="/scss/_reset.scss">
+    <link rel="stylesheet" href="/css/fonts.css">
+    <link rel="stylesheet" href="/css/style.min.css">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <title>Pascal Vent</title>
 </head>
 
@@ -389,14 +390,14 @@
                                 <div class="plan__steps-left">
                                     <div class="plan__left">
                                         <div class="plan__left-title">Получение Заявки</div>
-                                        <div class="plan__left-txt">Заполните форму, 
+                                        <div class="plan__left-txt">Заполните форму,
                                             укажите свои данные и отправьте нашим менеджерам в обработку
                                         </div>
                                     </div>
                                     <div class="plan__left">
                                         <div class="plan__left-title">Выезд На Объект</div>
-                                        <div class="plan__left-txt">В назначенное время мы 
-                                            выезжаем на объект и согласовываем основные технические 
+                                        <div class="plan__left-txt">В назначенное время мы
+                                            выезжаем на объект и согласовываем основные технические
                                             решения, обсуждаем техническое задание
                                         </div>
                                     </div>
@@ -409,22 +410,22 @@
                                 <div class="plan__steps-right">
                                     <div class="plan__right">
                                         <div class="plan__right-title">Консультация</div>
-                                        <div class="plan__right-txt">После обработки Вашей заявки, 
-                                            мы связываемся с Вами, выявляем потребности и пожелания, 
+                                        <div class="plan__right-txt">После обработки Вашей заявки,
+                                            мы связываемся с Вами, выявляем потребности и пожелания,
                                             а также проводим техническую консультацию
                                         </div>
                                     </div>
                                     <div class="plan__right">
                                         <div class="plan__right-title">Составляем График</div>
-                                        <div class="plan__right-txt">На этом этапе мы составляем 
-                                            коммерческое предложение и занимаемся согласованием графика 
+                                        <div class="plan__right-txt">На этом этапе мы составляем
+                                            коммерческое предложение и занимаемся согласованием графика
                                             работ (проектирования, закупки оборудования и монтажа).
                                         </div>
                                     </div>
                                     <div class="plan__right">
                                         <div class="plan__right-title">Поставка И Монтаж</div>
-                                        <div class="plan__right-txt">На этом этапе, происходит 
-                                            поставка всех материалов и начинается 
+                                        <div class="plan__right-txt">На этом этапе, происходит
+                                            поставка всех материалов и начинается
                                             выполнение монтажных работ
                                         </div>
                                     </div>
@@ -435,9 +436,71 @@
                     </div>
                 </div>
             </section>
+            <section class="portfolio">
+                <div class="container">
+                    <div class="portfolio__inner">
+                        <div class="portfolio__header">
+                            <h2 class="portfolio__header-title">Портфолио И Процесс Работы</h2>
+                            <p class="portfolio__header-txt">Технические решения, принятые в 
+                                рабочих чертежах, соответствуют требованиям экологических, 
+                                санитарно-гигиенических, противопожарных и других норм и правил, 
+                                и обеспечивают безопасную для жизни людей эксплуатацию объекта при
+                                соблюдении предусмотренных рабочими чертежами мероприятий.</p>
+                        </div>
+                        <div class="portfolio__arrows">
+                            <a class="portfolio__arrow portfolio__arrow-prev" href="#">
+                                <span></span>
+                                <span></span>
+                            </a>
+                            <a class="portfolio__arrow portfolio__arrow-next" href="#">
+                                <span></span>
+                                <span></span>
+                            </a>
+                        </div>
+                        <div class="portfolio__body" data-slick='{"slidesToShow": 3, "slidesToScroll": 3}'>
+                            <div class="portfolio__content">
+                                <img src="images/portfolio/portfolio_1.jpg" alt="">
+                                <div class="portfolio__content-logo"></div>
+                                <div class="portfolio__content-block">
+                                    <p class="portfolio__content-title">Приточная Вентиляция</p>
+                                    <p class="portfolio__content-txt">Монтаж приточной вентиляции (объект в Прайм Парк)
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="portfolio__content">
+                                <img src="images/portfolio/portfolio_2.jpg" alt="">
+                                <div class="portfolio__content-logo"></div>
+                                <div class="portfolio__content-block">
+                                    <p class="portfolio__content-title">Приточная Вентиляция</p>
+                                    <p class="portfolio__content-txt">Монтаж приточной вентиляции (объект в Прайм Парк)
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="portfolio__content">
+                                <img src="images/portfolio/portfolio_3.jpg" alt="">
+                                <div class="portfolio__content-logo"></div>
+                                <div class="portfolio__content-block">
+                                    <p class="portfolio__content-title">Канальные Кондиционеры</p>
+                                    <p class="portfolio__content-txt">Монтаж канальных кондиционеров</p>
+                                </div>
+                            </div>
+                            <div class="portfolio__content">
+                                <img src="images/portfolio/portfolio_4.jpg" alt="">
+                                <div class="portfolio__content-logo"></div>
+                                <div class="portfolio__content-block">
+                                    <p class="portfolio__content-title">Канальные Кондиционеры</p>
+                                    <p class="portfolio__content-txt">Монтаж канальных кондиционеров</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </main>
     </div>
 
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="/js/main.js"></script>
 </body>
 

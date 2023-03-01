@@ -1,3 +1,5 @@
+/*========================Servicecs_tabs========================*/
+
 const tabsBtn   = document.querySelectorAll(".services__btn-def");
 const tabsItems = document.querySelectorAll(".services__content-block");
 
@@ -25,4 +27,26 @@ function onTabClick(item) {
 }
 
 document.querySelector('.services__btn-def').click();
+
+/*=========================Portfolio_slider========================*/
+
+$('.portfolio__body').slick({
+    arrows: false,
+    slidesToShow: 4,
+    dots: true,
+    centerMode: true,
+    centerPadding: '5px',
+})
+
+$('.portfolio__arrow-prev').on('click', function (e) {
+    e.preventDefault()
+    $('.portfolio__body').slick('slickPrev')
+})
+$('.portfolio__arrow-next').on('click', function (e) {
+    e.preventDefault()
+    $('.portfolio__body').slick('slickNext')
+})
+
+
+
 

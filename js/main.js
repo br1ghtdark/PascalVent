@@ -30,22 +30,21 @@ document.querySelector('.services__btn-def').click();
 
 /*=========================Portfolio_slider========================*/
 
-$('.portfolio__body').slick({
-    arrows: false,
-    slidesToShow: 4,
-    dots: true,
-    centerMode: true,
-    centerPadding: '5px',
-})
+$(document).ready(function(){
+    $('.portfolio__body').slick()
+});
 
-$('.portfolio__arrow-prev').on('click', function (e) {
-    e.preventDefault()
-    $('.portfolio__body').slick('slickPrev')
-})
-$('.portfolio__arrow-next').on('click', function (e) {
-    e.preventDefault()
-    $('.portfolio__body').slick('slickNext')
-})
+
+
+
+// $('.portfolio__arrow-prev').on('click', function (e) {
+//     e.preventDefault()
+//     $('.portfolio__body').slick('slickPrev')
+// })
+// $('.portfolio__arrow-next').on('click', function (e) {
+//     e.preventDefault()
+//     $('.portfolio__body').slick('slickNext')
+// })
 
 
 

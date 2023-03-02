@@ -1255,6 +1255,7 @@ a {
   padding-top: 50px;
   padding-bottom: 50px;
   /*===========================Portfolio_Body============================*/
+  /*===========================Portfolio_slider============================*/
 }
 .portfolio__header {
   display: -webkit-box;
@@ -1286,9 +1287,7 @@ a {
   max-width: 641px;
 }
 .portfolio__body {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  /* display: flex; */
   position: absolute;
   width: 1305px;
   height: 456px;
@@ -1370,7 +1369,8 @@ a {
 .portfolio__content {
   position: relative;
   margin-right: 30px;
-  max-width: 270px;
+  min-width: 0;
+  /* max-width: 270px; */
 }
 .portfolio__content img {
   -o-object-fit: cover;
@@ -1413,6 +1413,52 @@ a {
   color: #FFFFFF;
 }
 
-.slick-center img {
-  width: 500px;
+.clients {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  /*=========================Clients_slider==========================*/
+}
+.clients__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  padding-top: 156px;
+}
+.clients__inner::before {
+  position: absolute;
+  content: url(../images/clients/clients_back.svg);
+  top: 0;
+  left: -135px;
+  z-index: -1;
+}
+.clients__header {
+  text-align: left;
+  max-width: 632px;
+  margin-right: 71px;
+}
+.clients__header-title {
+  font-family: "Ruberoid";
+  font-size: 45px;
+  font-weight: 400;
+  line-height: 60px;
+  color: #495E4C;
+  margin-bottom: 25px;
+}
+.clients__header-txt {
+  font-family: "ProximaNova";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  color: #495E4C;
+  color: #848484;
+}
+.clients__content {
+  padding-top: 123px;
+}
+.clients__arrows-left {
+  fill: #D9FADD;
+}
+.clients__arrows-right {
+  rotate: 180deg;
 }

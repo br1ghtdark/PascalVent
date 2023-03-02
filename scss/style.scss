@@ -998,8 +998,7 @@
     padding-top: 50px;
     padding-bottom: 50px;
 
-    &__inner {
-    }
+    &__inner {}
 
     &__header {
         display: flex;
@@ -1022,7 +1021,7 @@
     /*===========================Portfolio_Body============================*/
 
     &__body {
-        display: flex;
+        /* display: flex; */
         position: absolute;
         width: 1305px;
         height: 456px;
@@ -1055,7 +1054,7 @@
                 top: 32.5%;
                 left: calc(50% - 2px);
             }
-    
+
             & span:last-child {
                 position: absolute;
                 display: block;
@@ -1085,7 +1084,7 @@
                 top: 47.5%;
                 left: calc(50% - .75px);
             }
-    
+
             & span:last-child {
                 position: absolute;
                 display: block;
@@ -1099,15 +1098,15 @@
                 left: calc(50% - .75px);
             }
         }
-
-
     }
-    
+
+    /*===========================Portfolio_slider============================*/
 
     &__content {
         position: relative;
         margin-right: 30px;
-        max-width: 270px;
+        min-width: 0;
+        /* max-width: 270px; */
 
         & img {
             object-fit: cover;
@@ -1123,9 +1122,8 @@
             width: 169px;
             height: 49px;
             border-radius: 0 15px 15px 0;
-            background: 30px 7px / 70% 70% no-repeat 
-            url("../images/logo.svg"),
-            linear-gradient(#D9FADD);
+            background: 30px 7px / 70% 70% no-repeat url("../images/logo.svg"),
+                linear-gradient(#D9FADD);
         }
 
         &-block {
@@ -1147,8 +1145,77 @@
     }
 }
 
-.slick-center img {
-    width: 500px;
+.clients {
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+
+    &__inner {
+        display: flex;
+        position: relative;
+        padding-top: 156px;
+
+        &::before {
+            position: absolute;
+            content: url(../images/clients/clients_back.svg);
+            top: 0;
+            left: -135px;
+            z-index: -1;
+        }
+
+    }
+
+    &__header {
+        text-align: left;
+        max-width: 632px;
+        margin-right: 71px;
+
+        &-title {
+            @include title-h2;
+            margin-bottom: 25px;
+        }
+
+        &-txt {
+            @include fonts-menu ($fz: 16px, $fw: 400, $lh: 26px);
+            color: #848484;
+        }
+    }
+
+    /*=========================Clients_slider==========================*/
+
+    &__content {
+        padding-top: 123px;
+
+        &-arrows {
+
+        }
+    }
+
+    &__arrows-left{
+        
+        &-switch {
+
+        }
+
+        &-prev {
+
+        }
+    }
+
+    &__arrows-right{
+        rotate: ;
+        
+        &-switch {
+
+        }
+
+        &-next {
+        }
+    }
+
+    &__slider {
+
+        &-item {
+        }
+    }
 }
-
-

@@ -30,22 +30,11 @@ document.querySelector('.services__btn-def').click();
 
 /*=========================Portfolio_slider========================*/
 
-$(document).ready(function(){
-    $('.portfolio__body').slick()
+new Swiper('.portfolio__body', {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    slidesPerGroup: 1,
 });
-
-
-
-
-// $('.portfolio__arrow-prev').on('click', function (e) {
-//     e.preventDefault()
-//     $('.portfolio__body').slick('slickPrev')
-// })
-// $('.portfolio__arrow-next').on('click', function (e) {
-//     e.preventDefault()
-//     $('.portfolio__body').slick('slickNext')
-// })
-
 
 
 

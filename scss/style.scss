@@ -998,7 +998,9 @@
     padding-top: 50px;
     padding-bottom: 50px;
 
-    &__inner {}
+    &__inner {
+        min-width: 0;
+    }
 
     &__header {
         display: flex;
@@ -1021,11 +1023,9 @@
     /*===========================Portfolio_Body============================*/
 
     &__body {
-        /* display: flex; */
-        position: absolute;
         width: 1305px;
         height: 456px;
-
+        overflow: hidden;
     }
 
     &__arrows {
@@ -1098,15 +1098,12 @@
                 left: calc(50% - .75px);
             }
         }
-    }
+}
 
     /*===========================Portfolio_slider============================*/
 
     &__content {
         position: relative;
-        margin-right: 30px;
-        min-width: 0;
-        /* max-width: 270px; */
 
         & img {
             object-fit: cover;
@@ -1144,6 +1141,26 @@
         }
     }
 }
+
+
+.swiper-slide.portfolio__content {
+    max-width: 270px;
+    flex-shrink: 1;
+
+}
+
+.swiper-slide-active.swiper-slide {
+    max-width: 500px;
+
+    & img {
+        width: 500px;
+    }
+}
+
+
+
+/*===========================Clients============================*/
+
 
 .clients {
     padding-top: 50px;
@@ -1203,7 +1220,6 @@
     }
 
     &__arrows-right{
-        rotate: ;
         
         &-switch {
 

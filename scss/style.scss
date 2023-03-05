@@ -1142,15 +1142,15 @@
     }
 }
 
+/* .swiper-slide {
+    margin-right: 30px;
+} */
 
 .swiper-slide.portfolio__content {
     max-width: 270px;
-    flex-shrink: 0;
-
 }
 
 .swiper-slide-active.swiper-slide {
-
     & img {
         width: 500px;
     }

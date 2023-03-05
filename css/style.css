@@ -1412,10 +1412,11 @@ a {
   color: #FFFFFF;
 }
 
+/* .swiper-slide {
+    margin-right: 30px;
+} */
 .swiper-slide.portfolio__content {
   max-width: 270px;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
 }
 
 .swiper-slide-active.swiper-slide img {

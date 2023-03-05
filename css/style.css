@@ -1414,14 +1414,22 @@ a {
 
 .swiper-slide.portfolio__content {
   max-width: 270px;
-  -ms-flex-negative: 1;
-      flex-shrink: 1;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
 }
 
-.swiper-slide-active.swiper-slide {
-  max-width: 500px;
-}
 .swiper-slide-active.swiper-slide img {
+  width: 500px;
+}
+
+.swiper-slide-next.swiper-slide {
+  margin-left: 230px;
+}
+
+.swiper-slide-prev.swiper-slide {
+  min-width: 500px;
+}
+.swiper-slide-prev.swiper-slide img {
   width: 500px;
 }
 

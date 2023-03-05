@@ -31,9 +31,9 @@ document.querySelector('.services__btn-def').click();
 /*=========================Portfolio_slider========================*/
 
 new Swiper('.portfolio__body', {
-    slidesPerView: 1,
+    slidesPerView: 4,
     spaceBetween: 30,
-    slidesPerGroup: 1,
+    loop: true,
 });
 
 

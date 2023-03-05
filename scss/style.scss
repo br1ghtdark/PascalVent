@@ -1145,15 +1145,25 @@
 
 .swiper-slide.portfolio__content {
     max-width: 270px;
-    flex-shrink: 1;
+    flex-shrink: 0;
 
 }
 
 .swiper-slide-active.swiper-slide {
-    max-width: 500px;
 
     & img {
         width: 500px;
+    }
+}
+
+.swiper-slide-next.swiper-slide {
+    margin-left: 230px;
+}
+
+.swiper-slide-prev.swiper-slide {
+    min-width: 500px;
+    & img {
+        width: 500px; 
     }
 }
 

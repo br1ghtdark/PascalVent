@@ -36,5 +36,13 @@ new Swiper('.portfolio__body', {
     spaceBetween: 30,
 });
 
+/*=========================Clients_slider========================*/
 
+new Swiper('.clients__slider', {
+    slidesPerView: "auto",
+    // loop: true,
+    spaceBetween: 20,
+    slideClass: "clients__slider-item",
+
+});
 

@@ -32,17 +32,25 @@ document.querySelector('.services__btn-def').click();
 
 new Swiper('.portfolio__body', {
     slidesPerView: "auto",
-    // loop: true,
     spaceBetween: 30,
+    navigation: {
+        nextEl: ".portfolio__arrows-right",
+        prevEl: ".portfolio__arrows-left"
+    },
+    speed: 800,
 });
 
 /*=========================Clients_slider========================*/
 
 new Swiper('.clients__slider', {
     slidesPerView: "auto",
-    // loop: true,
     spaceBetween: 20,
     slideClass: "clients__slider-item",
+    navigation: {
+        nextEl: ".clients__arrows-right",
+        prevEl: ".clients__arrows-left"
+    },
+    speed: 800,
 
 });
 

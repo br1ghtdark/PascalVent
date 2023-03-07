@@ -998,13 +998,21 @@
 
     &__inner {
         min-width: 0;
+        position: relative;
+
+        &::before {
+            content: url(../images/portfolio/portfolio_back.svg);
+            position: absolute;
+            top: -90px;
+            left: -135px;
+        }
     }
 
     &__header {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        margin-bottom: 111px;
+        margin-bottom: 46px;
 
         &-title {
             @include title-h2;
@@ -1026,77 +1034,102 @@
         overflow: hidden;
     }
 
-    &__arrows {
+    &__container {
+
+        &-arrows {
         display: flex;
+        margin-bottom: 31px;
+        }
     }
 
-    &__arrow {
-        height: 34px;
-        width: 34px;
-        background-color: #5CCD6A;
-        border-radius: 50%;
+    &__arrows {
+
+        &-switch {
+            position: relative;
+            fill: white;
+        }
+
+        &-left {
+            position: relative;
+            rotate: -90deg;
+            margin-left: 5px;
+            margin-right: 35px;
+            transition: all .6s;
+            @include button-active($width: 28px, $height: 28px, $br: 50%,
+                $fz: 14px, $fw: 400, $lh: 21px);
+                box-shadow: inset 2px -2px 5px rgba(29, 92, 28, 0.2);
+                box-shadow: 0px 0px 1px 5px rgba(120, 192, 129, 0.25);
+            
+                &:hover {
+                    @include btn-hover;
+                }
+
+                &.swiper-button-disabled {
+                    background: #FFFFFF;
+                    opacity: 0.6;
+                    box-shadow: inset 2px -2px 5px rgb(255, 255, 255, .6);
+                    transition: all .6s;
+                    & svg {
+                        fill: #D9FADD;
+                        transition: all .6s;
+                    }
+                }
+        }
 
         &-prev {
+            display: block;
+            height: 28px;
+            width: 28px;
+            border-radius: 19px;
+            & svg {
+                position: absolute;
+                top: 6px;
+                left: 6px;
+            }
+        }
+
+        &-right {
             position: relative;
-            margin-right: 30px;
+            rotate: 90deg;
+            transition: all .6s;
+            @include button-active($width: 28px, $height: 28px, $br: 50%,
+                $fz: 14px, $fw: 400, $lh: 21px);
+                box-shadow: inset 2px -2px 5px rgba(29, 92, 28, 0.2);
+                box-shadow: 0px 0px 1px 5px rgba(120, 192, 129, 0.25);
+            
+                &:hover {
+                    @include btn-hover;
+                }
 
-            & span:first-child {
-                position: absolute;
-                display: block;
-                height: 10px;
-                width: 3.5px;
-                border-radius: 3px;
-                background-color: #FF6433;
-                transition: all 0.4s;
-                rotate: 45deg;
-                top: 32.5%;
-                left: calc(50% - 2px);
-            }
-
-            & span:last-child {
-                position: absolute;
-                display: block;
-                height: 10px;
-                width: 3.5px;
-                border-radius: 3px;
-                background-color: #FF6433;
-                rotate: -45deg;
-                transition: all 0.4s;
-                top: 47.5%;
-                left: calc(50% - 2px);
-            }
+                &.swiper-button-disabled {
+                    background: #FFFFFF;
+                    opacity: 0.6;
+                    box-shadow: inset 2px -2px 5px rgb(255, 255, 255, .6);
+                    transition: all .6s;
+                    & svg {
+                        fill: #D9FADD;
+                        transition: all .6s;
+                    }
+                }
+                
         }
 
         &-next {
-            position: relative;
 
-            & span:first-child {
-                position: absolute;
-                display: block;
-                height: 10px;
-                width: 3.5px;
-                border-radius: 3px;
-                background-color: #FF6433;
-                transition: all 0.4s;
-                rotate: 45deg;
-                top: 47.5%;
-                left: calc(50% - .75px);
-            }
+            display: block;
+            height: 28px;
+            width: 28px;
+            border-radius: 19px;
 
-            & span:last-child {
+            & svg {
                 position: absolute;
-                display: block;
-                height: 10px;
-                width: 3.5px;
-                border-radius: 3px;
-                background-color: #FF6433;
-                rotate: -45deg;
-                transition: all 0.4s;
-                top: 32.5%;
-                left: calc(50% - .75px);
+                top: 6px;
+                left: 6px;
             }
+            
         }
-}
+    }
+
 
     /*===========================Portfolio_slider============================*/
 
@@ -1139,6 +1172,7 @@
         }
     }
 }
+
 
 /* .swiper-slide {
     margin-right: 30px;
@@ -1210,34 +1244,103 @@
 
     &__content {
         padding-top: 123px;
-        /* position: absolute; */
         margin-right: -300px;
 
         &-arrows {
-
+            display: flex;
+            padding-top: 25px;
         }
     }
 
-    &__arrows-left{
-        
-        &-switch {
+    &__arrows {
 
+        &-switch {
+            position: relative;
+            fill: white;
         }
+
+        &-left {
+            position: relative;
+            rotate: -90deg;
+            margin-left: 447px;
+            margin-right: 35px;
+            transition: all .6s;
+            @include button-active($width: 28px, $height: 28px, $br: 50%,
+                $fz: 14px, $fw: 400, $lh: 21px);
+                box-shadow: inset 2px -2px 5px rgba(29, 92, 28, 0.2);
+                box-shadow: 0px 0px 1px 5px rgba(120, 192, 129, 0.25);
+            
+                &:hover {
+                    @include btn-hover;
+                }
+
+                &.swiper-button-disabled {
+                    background: #FFFFFF;
+                    opacity: 0.6;
+                    box-shadow: inset 2px -2px 5px rgb(255, 255, 255, .6);
+                    transition: all .6s;
+                    & svg {
+                        fill: #D9FADD;
+                        transition: all .6s;
+                    }
+                }
+        }
+
+
 
         &-prev {
-
+            display: block;
+            height: 28px;
+            width: 28px;
+            border-radius: 19px;
+            & svg {
+                position: absolute;
+                top: 6px;
+                left: 6px;
+            }
         }
-    }
 
-    &__arrows-right{
-        
-        &-switch {
 
+        &-right {
+            position: relative;
+            rotate: 90deg;
+            transition: all .6s;
+            @include button-active($width: 28px, $height: 28px, $br: 50%,
+                $fz: 14px, $fw: 400, $lh: 21px);
+                box-shadow: inset 2px -2px 5px rgba(29, 92, 28, 0.2);
+                box-shadow: 0px 0px 1px 5px rgba(120, 192, 129, 0.25);
+            
+                &:hover {
+                    @include btn-hover;
+                }
+
+                &.swiper-button-disabled {
+                    background: #FFFFFF;
+                    opacity: 0.6;
+                    box-shadow: inset 2px -2px 5px rgb(255, 255, 255, .6);
+                    transition: all .6s;
+                    & svg {
+                        fill: #D9FADD;
+                        transition: all .6s;
+                    }
+                }
         }
 
         &-next {
+
+            display: block;
+            height: 28px;
+            width: 28px;
+            border-radius: 19px;
+
+            & svg {
+                position: absolute;
+                top: 6px;
+                left: 6px;
+            }
         }
     }
+
 
     &__slider {
         width: 602px;
@@ -1321,6 +1424,7 @@
         &-title {
             @include fonts-rub ($fz: 26px, $fw: 400, $lh: 35px);
             margin-bottom: 25px;
+            margin-left: -37px;
         }
 
         &-txt {

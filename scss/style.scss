@@ -26,6 +26,254 @@
 }
 
 /*========================Header======================*/
+/*========================Header__PopUp=================*/
+
+.popup  {
+
+    &__top {
+        min-height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 30px 10px;
+        
+        &.active {
+            visibility: visible;
+            opacity: 1;
+        }
+
+        &-content {
+            max-width: 445px;
+            max-height: 463px;
+            background: #D9FADD;
+            box-shadow: 0px 0px 10px rgba(73, 93, 76, 0.1);
+            border-radius: 50px;
+        }
+
+        &-title {
+            @include title-h2;
+            font-size: 40px;
+            line-height: 55px;
+            padding: 35px 84px 20px 35px;
+        }
+
+        &-desc {
+            padding: 35px;
+            max-height: 298px;
+            background: #FFFFFF;
+            box-shadow: 0px 0px 10px rgba(73, 93, 76, 0.1);
+            border-radius: 35px 35px 50px 50px;
+        }
+    }
+
+    &__desc {
+
+        &-txt {
+            @include fonts-menu ($fz: 16px, $fw: 400, $lh: 26px);
+            color: #7CA381;
+            margin-bottom: 20px;
+        }
+
+        &-schedule {
+            @include fonts-menu ($fz: 16px, $fw: 600, $lh: 19px);
+            color: #7CA381;
+            margin-bottom: 17px;
+        }
+
+        &-clocks {
+            position: relative;
+            @include fonts-menu ($fz: 16px, $fw: 600, $lh: 19px);
+            color: #7CA381;
+            margin-left: 37px;
+            margin-bottom: 38px;
+
+            &::before {
+                position: absolute;
+                content: url(../images/header/header_popup/header_popup-clock.svg);
+                top: -3.25px;
+                left: -37px;
+            }
+        }
+
+        &-numbers {
+            display: flex;
+            align-items: center;
+
+        }
+    }
+
+    &__numbers {
+
+        &-phone1 {
+            position: relative;
+            margin-left: 37px;
+            @include fonts-menu ($fz: 16px, $fw: 600, $lh: 24px);
+            color: #7B897D;
+
+            &::before {
+                position: absolute;
+                content: url(../images/header/header_popup/header_popup-phone.svg);
+                top: 0;
+                left: -37px;
+            }
+        }
+
+        &-line {
+            margin-left: 21px;
+            margin-right: 58px;
+        }
+
+        &-phone2 {
+            position: relative;
+            @include fonts-menu ($fz: 16px, $fw: 600, $lh: 24px);
+            color: #7B897D;
+
+            &::before {
+                position: absolute;
+                content: url(../images/header/header_popup/header_popup-phone.svg);
+                top: 0;
+                left: -37px;
+            }
+        }
+    }
+}
+
+.popup__top-close {
+}
+
+/*========================Application__PopUp=================*/
+
+.popup {
+
+    &__application {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(217, 250, 221, 0.55);
+        backdrop-filter: blur(10px);
+        z-index: 200;
+        visibility: hidden;
+        opacity: 0;
+        transition: all .8s;
+
+        &.active {
+            visibility: visible;
+            opacity: 1;
+        }
+
+        &-body {
+            min-height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 30px 10px;
+
+            &.active {
+                visibility: visible;
+                opacity: 1;
+            }
+        }
+
+        &-content {
+            position: relative;
+            width: 412px;
+            height: 561px;
+            background: #D9FADD;
+            box-shadow: 0px 0px 10px rgba(73, 93, 76, 0.1);
+            border-radius: 50px;
+        }
+
+        &-close {
+            @include button-active ($width: 53px, $height: 49px, $br: 15px,
+            $fz: 14px, $fw: 400, $lh: 21px);
+            position: absolute;
+            right: 0;
+            top: -74px;
+
+            /* &:hover {
+            } */
+
+            &-container {
+                position: relative;
+            }
+        }
+
+        &-line {
+            position: absolute;
+            height: 35px;
+            width: 4px;
+            background: #FFFFFF;
+            border-radius: 2.5px;
+
+            &:first-child {
+                rotate: -45deg;
+                top: 15%;
+                left: 48%;
+            }
+
+            &:last-child {
+                rotate: 45deg;
+                top: 15%;
+                left: 48%;
+            }
+        }
+
+        &-title {
+            @include title-h2;
+            font-size: 40px;
+            line-height: 55px;
+            padding: 35px 70px 20px 35px;
+        }
+
+        &-desc {
+            display: flex;
+            flex-direction: column;
+            width: 412px;
+            height: 298px;
+            background: #FFFFFF;
+            box-shadow: 0px 0px 10px rgba(73, 93, 76, 0.1);
+            border-radius: 35px 35px 50px 50px;
+            padding: 35px;
+        }
+
+        &-logo {
+            margin: 15px 92px;
+
+            & img {
+                width: 228px;
+                height: 68px;
+            }
+        }
+    }
+}
+.application {
+
+    &__form {
+        width: 342px;
+        height: 49px;
+        background: #FFFFFF;
+        box-shadow: 0px 0px 8px rgba(66, 83, 69, 0.14);
+        border-radius: 15px;
+        margin-bottom: 20px;
+
+        &-inner {
+            padding: 16px 0 16px 20px;
+        }
+    }
+
+    &__button {
+        @include button-active ($width: 322px, $height: 55px, $br: 17px,
+        $fz: 15px, $fw: 400, $lh: 21px);
+
+        &-container {
+            margin-left: 10px;
+        }
+    }
+}
+
+
 /*========================Header__Top=================*/
 
 .header {
@@ -37,6 +285,37 @@
     &__top {
         position: relative;
         padding-top: 26px;
+
+        &--fixed {
+            position: fixed;
+            left: calc(50% - 720px);
+            top: 0;
+            z-index: 100;
+            width: 1440px;
+            height: 114px;
+            background: #D9FADD;
+            border-radius: 0px 0px 70px 70px;
+        }
+
+        &-popup {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(217, 250, 221, 0.55);
+            backdrop-filter: blur(10px);
+            z-index: 200;
+            visibility: hidden;
+            opacity: 0;
+            transition: all .8s;
+
+
+            &.active {
+                visibility: visible;
+                opacity: 1;
+            }
+        }
     }
 
     &__top-inner {
@@ -161,6 +440,7 @@
         }
     }
 }
+
 
 /*========================Services======================*/
 /*========================Services__about================*/
@@ -1206,7 +1486,7 @@
 
 .clients {
     padding-top: 50px;
-    padding-bottom: 100px;
+    padding-bottom: 50px;
 
 
     &__inner {
@@ -1379,7 +1659,7 @@
 
     &__about {
         padding-top: 86px;
-        padding-bottom: 50px;
+        padding-bottom: 94px;
         max-width: 406px;
         margin-right: 120px;
 
@@ -1417,7 +1697,7 @@
     }
 
     &__contacts {
-        padding-top: 22px;
+        padding-top: 108px;
         max-width: 230px;
         margin-right: 133px;
 
@@ -1506,7 +1786,7 @@
 
 
     &__request {
-        padding-top: 22px;
+        padding-top: 102px;
 
         &-title {
             @include fonts-rub ($fz: 26px, $fw: 400, $lh: 35px);

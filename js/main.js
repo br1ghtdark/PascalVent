@@ -1,3 +1,81 @@
+/*========================Header========================*/
+const header__top = document.querySelector('.header__top');
+const header__body = document.querySelector('.header__body');
+const header__topHeight = header__top.offsetHeight;
+const header__bodyHeight = header__body.offsetHeight;
+console.log(header__topHeight)
+window.addEventListener('scroll', () => {
+	let scrollDistance = window.scrollY;
+
+	if (scrollDistance >= header__bodyHeight + header__topHeight) {
+		header__top.classList.add('header__top--fixed');
+		header__body.style.marginTop = `${header__topHeight}px`;
+	} else {
+		header__top.classList.remove('header__top--fixed');
+		header__body.style.marginTop = null;
+	}
+})
+
+
+/*========================Header-PopUp========================*/
+/*========================Header-PopUp========================*/
+
+
+// let popupBg = document.querySelector('.header__top-popup'); // Фон попап окна
+// let popup = document.querySelector('.popup__top'); // Само окно
+// let openPopupButtons = document.querySelectorAll('.header__top-button'); // Кнопки для показа окна
+// let closePopupButton = document.querySelector('.popup__top-close'); // Кнопка для скрытия окна
+
+// openPopupButtons.forEach((button) => { // Перебираем все кнопки
+//     button.addEventListener('click', (e) => { // Для каждой вешаем обработчик событий на клик
+//         e.preventDefault(); // Предотвращаем дефолтное поведение браузера
+//         popupBg.classList.add('active'); // Добавляем класс 'active' для фона
+//         popup.classList.add('active'); // И для самого окна
+//     })
+// });
+
+// closePopupButton.addEventListener('click',() => { // Вешаем обработчик на крестик
+//     popupBg.classList.remove('active'); // Убираем активный класс с фона
+//     popup.classList.remove('active'); // И с окна
+// });
+
+// document.addEventListener('click', (e) => { // Вешаем обработчик на весь документ
+//     if(e.target === popup) { // Если цель клика - фот, то:
+//         popupBg.classList.remove('active'); // Убираем активный класс с фона
+//         popup.classList.remove('active'); // И с окна
+//     }
+// });
+
+/*========================Application-PopUp========================*/
+/*========================Application-PopUp========================*/
+
+
+let popupBg = document.querySelector('.popup__application'); // Фон попап окна
+let popup = document.querySelector('.popup__application-body'); // Само окно
+let openPopupButtons = document.querySelectorAll('.application-open'); // Кнопки для показа окна
+let closePopupButton = document.querySelector('.popup__application-close'); // Кнопка для скрытия окна
+
+openPopupButtons.forEach((button) => { // Перебираем все кнопки
+    button.addEventListener('click', (e) => { // Для каждой вешаем обработчик событий на клик
+        e.preventDefault(); // Предотвращаем дефолтное поведение браузера
+        popupBg.classList.add('active'); // Добавляем класс 'active' для фона
+        popup.classList.add('active'); // И для самого окна
+    })
+});
+
+closePopupButton.addEventListener('click',() => { // Вешаем обработчик на крестик
+    popupBg.classList.remove('active'); // Убираем активный класс с фона
+    popup.classList.remove('active'); // И с окна
+});
+
+document.addEventListener('click', (e) => { // Вешаем обработчик на весь документ
+    if(e.target === popup) { // Если цель клика - фот, то:
+        popupBg.classList.remove('active'); // Убираем активный класс с фона
+        popup.classList.remove('active'); // И с окна
+    }
+});
+
+/*========================Servicecs_tabs========================*/
 /*========================Servicecs_tabs========================*/
 
 const tabsBtn   = document.querySelectorAll(".services__btn-def");

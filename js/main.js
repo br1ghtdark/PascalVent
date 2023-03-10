@@ -21,30 +21,30 @@ window.addEventListener('scroll', () => {
 /*========================Header-PopUp========================*/
 
 
-// let popupBg = document.querySelector('.header__top-popup'); // Фон попап окна
-// let popup = document.querySelector('.popup__top'); // Само окно
-// let openPopupButtons = document.querySelectorAll('.header__top-button'); // Кнопки для показа окна
-// let closePopupButton = document.querySelector('.popup__top-close'); // Кнопка для скрытия окна
+let popupback = document.querySelector('.header__top-popup'); // Фон попап окна
+let popup_body = document.querySelector('.popup__top'); // Само окно
+let openPopupBtn = document.querySelectorAll('.header__top-button'); // Кнопки для показа окна
+let closePopupBtn = document.querySelector('.popup__top-close'); // Кнопка для скрытия окна
 
-// openPopupButtons.forEach((button) => { // Перебираем все кнопки
-//     button.addEventListener('click', (e) => { // Для каждой вешаем обработчик событий на клик
-//         e.preventDefault(); // Предотвращаем дефолтное поведение браузера
-//         popupBg.classList.add('active'); // Добавляем класс 'active' для фона
-//         popup.classList.add('active'); // И для самого окна
-//     })
-// });
+openPopupBtn.forEach((button) => { // Перебираем все кнопки
+    button.addEventListener('click', (e) => { // Для каждой вешаем обработчик событий на клик
+        e.preventDefault(); // Предотвращаем дефолтное поведение браузера
+        popupback.classList.add('active'); // Добавляем класс 'active' для фона
+        popup_body.classList.add('active'); // И для самого окна
+    })
+});
 
-// closePopupButton.addEventListener('click',() => { // Вешаем обработчик на крестик
-//     popupBg.classList.remove('active'); // Убираем активный класс с фона
-//     popup.classList.remove('active'); // И с окна
-// });
+closePopupBtn.addEventListener('click',() => { // Вешаем обработчик на крестик
+    popupback.classList.remove('active'); // Убираем активный класс с фона
+    popup_body.classList.remove('active'); // И с окна
+});
 
-// document.addEventListener('click', (e) => { // Вешаем обработчик на весь документ
-//     if(e.target === popup) { // Если цель клика - фот, то:
-//         popupBg.classList.remove('active'); // Убираем активный класс с фона
-//         popup.classList.remove('active'); // И с окна
-//     }
-// });
+document.addEventListener('click', (e) => { // Вешаем обработчик на весь документ
+    if(e.target === popup_body) { // Если цель клика - фот, то:
+        popupback.classList.remove('active'); // Убираем активный класс с фона
+        popup_body.classList.remove('active'); // И с окна
+    }
+});
 
 /*========================Application-PopUp========================*/
 /*========================Application-PopUp========================*/

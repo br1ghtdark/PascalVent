@@ -22,22 +22,22 @@
                     </a>
                     <ul class="header__menu">
                         <li class="header__menu-item">
-                            <a class="header__menu-a" href="#">услуги</a>
+                            <a class="header__menu-a" href="#services">услуги</a>
                         </li>
                         <li class="header__menu-item">
-                            <a class="header__menu-a" href="#">о нас</a>
+                            <a class="header__menu-a" href="#about">о нас</a>
                         </li>
                         <li class="header__menu-item">
-                            <a class="header__menu-a" href="#">польза продукта</a>
+                            <a class="header__menu-a" href="#comfort">польза продукта</a>
                         </li>
                         <li class="header__menu-item">
-                            <a class="header__menu-a" href="#">оборудование</a>
+                            <a class="header__menu-a" href="#portfolio">оборудование</a>
                         </li>
                         <li class="header__menu-item">
-                            <a class="header__menu-a" href="#">этапы работы</a>
+                            <a class="header__menu-a" href="#plan">этапы работы</a>
                         </li>
                         <li class="header__menu-item">
-                            <a class="header__menu-a" href="#">отзывы</a>
+                            <a class="header__menu-a" href="#clients">отзывы</a>
                         </li>
                     </ul>
                     <a href="#header-popup" class="header__top-button">
@@ -49,7 +49,12 @@
                 <div id="header-popup" class="header__top-popup">
                     <div class="popup__top">
                         <div class="popup__top-content">
-                            <a href="" class="popup__top-close">x</a>
+                            <button class="popup__top-close">
+                                <div class="popup__close-container">
+                                    <div class="popup__top-line"></div>
+                                    <div class="popup__top-line"></div>
+                                </div>
+                            </button>
                             <div class="popup__top-title">Быстрая Связь С Нами</div>
                             <div class="popup__top-desc">
                                 <div class="popup__desc-txt">Вы можете набрать нам, и менеджеры Pascal Vent с радостью
@@ -121,7 +126,7 @@
             </div>
         </header>
         <main>
-            <section class="services">
+            <section id="services" class="services">
                 <div class="container">
                     <div class="services__inner">
                         <div class="services__about">
@@ -196,7 +201,7 @@
                     </div>
                 </div>
             </section>
-            <section class="key">
+            <section id="key" class="key">
                 <div class="container">
                     <div class="key__inner">
                         <h2 class="key__header">Комплексное Решение По монтажу И Вентиляции Под Ключ</h2>
@@ -279,7 +284,7 @@
                     </div>
                 </div>
             </section>
-            <section class="step">
+            <section id="step" class="step">
                 <div class="container">
                     <div class="step__inner">
                         <div class="step__header">
@@ -323,7 +328,7 @@
                     </div>
                 </div>
             </section>
-            <section class="about">
+            <section id="about" class="about">
                 <div class="container">
                     <div class="about__inner">
                         <div class="about__header">
@@ -372,7 +377,7 @@
                     </div>
                 </div>
             </section>
-            <section class="comfort">
+            <section id="comfort" class="comfort">
                 <div class="container">
                     <div class="comfort__inner">
                         <div class="comfort__content">
@@ -407,7 +412,7 @@
                                 работоспособность днем, а ночью подарит здоровый и крепкий сон.
                                 Это важно для тех, кто следит за своим здоровьем и здоровьем своих близких.
                             </div>
-                            <button class="comfort__content-btn">ЗАПОЛНИТЬ ЗАЯВКУ</button>
+                            <button class="comfort__content-btn application-open">ЗАПОЛНИТЬ ЗАЯВКУ</button>
                         </div>
                         <div class="comfort__images">
                             <div class="comfort__images-left">
@@ -430,7 +435,7 @@
                     </div>
                 </div>
             </section>
-            <section class="plan">
+            <section id="plan" class="plan">
                 <div class="container">
                     <div class="plan__inner">
                         <div class="plan__header">Понятная И Эффективная Схема Работы</div>
@@ -485,7 +490,7 @@
                     </div>
                 </div>
             </section>
-            <section class="portfolio">
+            <section id="portfolio" class="portfolio">
                 <div class="container">
                     <div class="portfolio__inner">
                         <div class="portfolio__header">
@@ -615,7 +620,7 @@
                     </div>
                 </div>
             </section>
-            <section class="clients">
+            <section id="clients" class="clients">
                 <div class="container">
                     <div class="clients__inner">
                         <div class="clients__header">
@@ -699,9 +704,9 @@
             <div class="container">
                 <div class="footer__inner">
                     <div class="footer__about">
-                        <div class="footer__about-logo">
+                        <a href="#" class="footer__about-logo">
                             <img src="images/logo.svg" alt="">
-                        </div>
+                        </a>
                         <p class="footer__about-txt">Компания "Pascal Vent" входит в число
                             лучших специализированных организаций, с широким ассортиментом
                             товаров и услуг, предназначенных для систем вентиляции и кондиционирования,

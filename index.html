@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="scss/_reset.scss">
-    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="scss/_fonts.scss">
     <link rel="stylesheet" href="css/style.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
     <title>Pascal Vent</title>
@@ -15,6 +15,13 @@
 <body>
     <div class="wrapper">
         <header class="header">
+            <div class="overlay"></div>
+            <a class="burger" href="#">
+                <div class="burger__container">
+                    <div class="burger__firstline"></div>
+                    <div class="burger__secondline"></div>
+                </div>
+            </a>
             <div class="header__top">
                 <div class="header__top-inner">
                     <a class="header__top-logo logo" href="/">
@@ -77,6 +84,9 @@
             <div class="header__body">
                 <div class="container">
                     <div class="header__body-inner">
+                        <a class="header__body-logo logo" href="/">
+                            <img src="images/logo.svg" alt="logo">
+                        </a>
                         <h1 class="header__body-title heading">Чистый Воздух
                             <br>Вместе С
                         </h1>
@@ -86,8 +96,10 @@
                         </p>
                         <div class="header__body-connection">
                             <div class="header__connection-geo">Московский регион,<br> Москва</div>
-                            <div class="header__connection-number">+ 7 492 373 63 31 <br>
-                                + 7 424 367 89 29</div>
+                            <div class="header__connection-number">
+                                <div class="header__connection-phone">+ 7 492 373 63 31</div>
+                                <div class="header__connection-phone">+ 7 424 367 89 29</div>
+                            </div>
                         </div>
                         <div class="header__body-button">
                             <button class="header__body-btn application-open">
@@ -738,7 +750,9 @@
             </div>
         </footer>
     </div>
-
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
 </body>

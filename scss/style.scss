@@ -25,6 +25,28 @@
     @include title-h2;
 }
 
+.burger {
+    display: none;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(119, 119, 119, 0.3);
+    z-index: 99;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .4s;
+}
+
+.overlay--show {
+    visibility: visible;
+    opacity: 1;
+}
+
 /*========================Header======================*/
 /*========================Header__PopUp=================*/
 
@@ -325,7 +347,6 @@
     }
 }
 
-
 /*========================Header__Top=================*/
 
 .header {
@@ -411,6 +432,10 @@
     &__body {
         padding-top: 85px;
         position: relative;
+
+        &-logo {
+            display: none;
+        }
     }
 
     &__body-inner {
@@ -428,6 +453,7 @@
     &__body-company {
         margin-top: 5px;
         color: #78C081;
+        margin-bottom: 20px;
     }
 
     &__body-text {
@@ -470,7 +496,7 @@
         &::before {
             content: url(../images/phone-left.svg);
             position: absolute;
-            left: -54px;
+            left: -52px;
             top: 8px;
         }
     }
@@ -490,7 +516,6 @@
         }
     }
 }
-
 
 /*========================Services======================*/
 /*========================Services__about================*/
@@ -1529,10 +1554,8 @@
     }
 }
 
-
 /*===========================Clients============================*/
 /*===========================Clients============================*/
-
 
 .clients {
     padding-top: 50px;
@@ -1872,3 +1895,360 @@
 }
 
 
+/* -----------------------------MEDIA------------------------------*/
+/* ---------------------------- 1400px------------------------------*/
+@media (max-width: 1400px) {
+/* -----------------------------Header_body------------------------------*/
+    .header {
+        &__top-logo {
+            margin-right: 56px;
+        }
+    }
+}
+
+/* -----------------------------MEDIA------------------------------*/
+/* ---------------------------- 1300px------------------------------*/
+@media (max-width: 1300px) {
+/* -----------------------------Header_body------------------------------*/
+    .header {
+        &__top-logo {
+            margin-right: 36px;
+        }
+
+        &__menu {
+            margin-right: 42px;
+
+            &-item {
+                margin-right: 30px;
+            }
+        }
+    }
+}
+
+/* -----------------------------MEDIA------------------------------*/
+/* ---------------------------- 1300px------------------------------*/
+@media (max-width: 1200px) {
+/* -----------------------------Header_body------------------------------*/
+
+    .header {
+        &__top-logo {
+            margin-right: 20px;
+        }
+        &__menu {
+            margin-right: 0px;
+        }
+    }
+}
+
+
+/* -----------------------------MEDIA------------------------------*/
+/* ---------------------------- 1100px------------------------------*/
+
+@media (max-width: 1100px) {
+    
+.burger {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 24px;
+    right: 38px;
+    height: 69px;
+    width: 69px;
+    background: rgba(255, 255, 255, 0.45);
+    border-radius: 15px;
+    z-index: 200;
+
+    &__container {
+        position: relative;
+        background: #FFFFFF;
+        height: 49px;
+        width: 49px;
+        border-radius: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 4px 10px 0 rgba(73, 93, 76, 0.15);
+
+        &::after  {
+            position: absolute;
+            bottom: 10px;
+            content: "";
+            right: 12px;
+            display: block;
+            height: 2px;
+            width: 25px;
+            margin: 5px 0;
+            border-radius: 3px;
+            background-color: #5CCD6A;
+            transition: all 0.4s;
+        }
+
+        &::before {
+            position: absolute;
+            content: "";
+            top: 10px;
+            right: 12px;
+            display: block;
+            height: 2px;
+            width: 25px;
+            margin: 5px 0;
+            border-radius: 3px;
+            background-color: #5CCD6A;
+            transition: all 0.4s;
+        }
+    }
+
+    &__firstline {
+        display: block;
+        height: 2px;
+        width: 6px;
+        border-radius: 3px;
+        background-color: #5CCD6A;
+        margin: 5px 3px 5px 0;
+        transition: all 0.4s;
+    }
+
+    &__secondline {
+        position: relative;
+        display: block;
+        height: 2px;
+        width: 16px;
+        border-radius: 3px;
+        background-color: #5CCD6A;
+        margin: 5px 0;
+        transition: all 0.4s;
+    }
+
+    &--active {
+        
+        & .burger__firstline {
+            visibility: hidden;
+            transition: all 0.1s;
+        }
+
+        & .burger__secondline {
+            visibility: hidden;
+            transition: all 0.1s;
+        }
+
+        & .burger__container::before {
+            content: "";
+            transform: rotate(45deg);
+            top: 18.5px;
+            border-radius: 3px;
+            background-color: #5CCD6A;
+            transition: all 0.4s;
+        }
+
+        & .burger__container::after {
+            content: "";
+            transform: rotate(-45deg);
+            bottom: 18.5px;
+            border-radius: 3px;
+            background-color: #5CCD6A;
+            transition: all 0.4s;
+        }
+    }
+    &--follow {
+        transition: all .4s;
+    }
+}
+
+.header {
+    &__top {
+        top: 0;
+        right: 0;
+        bottom: 0;
+        min-width: 375px;
+        position: fixed;
+        background-color: #d2e0d6;
+        z-index: 150;
+        transform: translate(100%);
+        transition: all .4s;
+    
+        &-inner {
+            flex-direction: column;
+            max-width: 320px;
+            align-items: center;
+        }
+    
+        &--open {
+            transform: translate(0%);
+        }
+
+        &-logo {
+            display: none;
+        }
+    }
+
+    &__menu {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 85px;
+
+        &-item {
+            margin-right: 0;
+            margin-bottom: 30px;
+            &:last-child {
+                margin-bottom: 30px;
+            }
+        }
+    }
+
+    &__body {
+        padding-top: 0;
+
+        &-logo {
+            display: block;
+            margin-bottom: 73px;
+            margin-top: 22px;
+            padding-left: 8px;
+            align-self: start;
+        }
+    }
+}
+
+}
+
+/* -----------------------------MEDIA------------------------------*/
+/* ---------------------------- 600px------------------------------*/
+
+@media (max-width: 600px) {
+/* -----------------------------Header_body------------------------------*/
+.heading {
+    @include heading-mob;
+}
+.header {
+        &__body {
+
+            &-company {
+                margin-bottom: 30px;
+            }
+
+            &-connection {
+                @include fontsmall-mob;
+            }
+
+            &-text {
+                @include fontstxt-mob;
+                max-width: 430px;
+                margin-bottom: 46px;
+            }
+
+            &-button {
+                align-self: center;
+                margin-top: 62px;
+                padding-bottom: 311px;
+            }
+
+            &-btn {
+                width: 289px;
+                height: 60px;
+                border-radius: 20px;
+            }
+        }
+
+        &__connection {
+
+            &-geo {
+                margin-right: 75px;
+
+                &::before {
+                    top: 0;
+                    right: 38px;
+                }
+            }
+
+            &-number {
+
+                &::before {
+                    top: 0;
+                    right: 42px;
+
+                }
+            }
+
+        }
+    }
+}
+
+/* -----------------------------MEDIA------------------------------*/
+/* ---------------------------- 500px------------------------------*/
+
+@media (max-width: 500px) {
+
+/* -----------------------------Header_body------------------------------*/
+.header {
+    &__body {
+        &-text {
+            width: 290px;
+        }
+
+        &-title {
+            width: 294px;
+        }
+
+        &-company {
+            width: 283px;
+        }
+
+        &-connection {
+            flex-direction: column;
+            padding-left: 35px;
+        }
+    }
+
+    &__connection {
+
+        &-geo {
+            margin-right: 0;
+            margin-bottom: 33px;
+
+            & br {
+                display: none;
+            }
+
+            &::before {
+                content: '';
+                background-image: url(../images/header/header_geolocation.svg);
+                background-size: contain;
+                width: 15px;
+                height: 20px;
+                position: absolute;
+                left: -27px;
+                top: 0px;
+            }
+        }
+        
+        &-number {
+            display: flex;
+
+
+            &::before {
+                display: none;
+            }
+        }
+
+        &-phone {
+            position: relative;
+            margin-right: 66px;
+
+            &:last-child {
+                margin-right: 0;
+            }
+
+            &::before {
+                content: '';
+                background-image: url(../images/phone-left.svg);
+                background-size: contain;
+                width: 20px;
+                height: 20px;
+                position: absolute;
+                left: -32px;
+                top: 0px;
+            }
+        }
+    }
+}
+}

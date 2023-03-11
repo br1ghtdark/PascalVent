@@ -8,6 +8,22 @@
     color: #495E4C;
 }
 
+@mixin fontstxt-mob ($fz: 18px, $fw: 400, $lh: 28px) {
+    font-family: "ProximaNova";
+    font-size: $fz;
+    font-weight: $fw;
+    line-height: $lh;
+    color: #7CA381;
+}
+
+@mixin fontsmall-mob ($fz: 14px, $fw: 400, $lh: 17px) {
+    font-family: "ProximaNova";
+    font-size: $fz;
+    font-weight: $fw;
+    line-height: $lh;
+    color: #7B897D;
+}
+
 @mixin fonts-rub ($fz: 15px, $fw: 400, $lh: 18px) {
     font-family: "Ruberoid";
     font-size: $fz;
@@ -44,6 +60,14 @@
     color: #495E4C;
 }
 
+@mixin subtitle-mob {
+    font-family: "Ruberoid";
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 38px;
+    color: #495E4C;
+}
+
 /*========================Header__Top=================*/
 
 @mixin style-heading {
@@ -51,6 +75,13 @@
     font-size: 64px;
     font-weight: 400;
     line-height: 74px;
+}
+
+@mixin heading-mob {
+    font-family: "Ruberoid";
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 46px;
 }
 
 /*========================Services=================*/

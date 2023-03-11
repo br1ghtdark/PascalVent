@@ -15,12 +15,28 @@ window.addEventListener('scroll', () => {
 		header__body.style.marginTop = null;
 	}
 })
+/*========================Header========================*/
 
+/*=========================Burger_menu========================*/
+
+$(window).on('scroll', function () {
+    if ($(window).scrollTop() > 0 && $('.header__top').hasClass('header__top--open') === false) {
+        $('.burger').addClass('burger--follow')
+    } else {
+        $('.burger').removeClass('burger--follow')
+    }
+})
+
+$('.burger, .burger--follow, .overlay').on('click', function (e) {
+e.preventDefault()
+$('.header__top').toggleClass('header__top--open')
+$('.overlay').toggleClass('overlay--show')
+$('.burger').toggleClass('burger--active')
+})
+
+/*=========================Burger_menu========================*/
 
 /*========================Header-PopUp========================*/
-/*========================Header-PopUp========================*/
-
-
 let popupback = document.querySelector('.header__top-popup'); // Фон попап окна
 let popup_body = document.querySelector('.popup__top'); // Само окно
 let openPopupBtn = document.querySelectorAll('.header__top-button'); // Кнопки для показа окна
@@ -45,11 +61,9 @@ document.addEventListener('click', (e) => { // Вешаем обработчик
         popup_body.classList.remove('active'); // И с окна
     }
 });
+/*========================Header-PopUp========================*/
 
 /*========================Application-PopUp========================*/
-/*========================Application-PopUp========================*/
-
-
 let popupBg = document.querySelector('.popup__application'); // Фон попап окна
 let popup = document.querySelector('.popup__application-body'); // Само окно
 let openPopupButtons = document.querySelectorAll('.application-open'); // Кнопки для показа окна
@@ -74,10 +88,9 @@ document.addEventListener('click', (e) => { // Вешаем обработчик
         popup.classList.remove('active'); // И с окна
     }
 });
+/*========================Application-PopUp========================*/
 
 /*========================Servicecs_tabs========================*/
-/*========================Servicecs_tabs========================*/
-
 const tabsBtn   = document.querySelectorAll(".services__btn-def");
 const tabsItems = document.querySelectorAll(".services__content-block");
 
@@ -105,9 +118,9 @@ function onTabClick(item) {
 }
 
 document.querySelector('.services__btn-def').click();
+/*========================Servicecs_tabs========================*/
 
 /*=========================Portfolio_slider========================*/
-
 new Swiper('.portfolio__body', {
     slidesPerView: "auto",
     spaceBetween: 30,
@@ -117,9 +130,9 @@ new Swiper('.portfolio__body', {
     },
     speed: 800,
 });
+/*=========================Portfolio_slider========================*/
 
 /*=========================Clients_slider========================*/
-
 new Swiper('.clients__slider', {
     slidesPerView: "auto",
     spaceBetween: 20,
@@ -129,6 +142,8 @@ new Swiper('.clients__slider', {
         prevEl: ".clients__arrows-left"
     },
     speed: 800,
-
 });
+/*=========================Clients_slider========================*/
+
+
 

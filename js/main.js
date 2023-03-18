@@ -128,7 +128,8 @@ new Swiper('.portfolio__body', {
         nextEl: ".portfolio__arrows-right",
         prevEl: ".portfolio__arrows-left"
     },
-    speed: 800,
+    speed: 1300,
+
 });
 /*=========================Portfolio_slider========================*/
 
@@ -141,7 +142,7 @@ new Swiper('.clients__slider', {
         nextEl: ".clients__arrows-right",
         prevEl: ".clients__arrows-left"
     },
-    speed: 800,
+    speed: 1000,
 });
 /*=========================Clients_slider========================*/
 

@@ -1288,6 +1288,7 @@
     padding-top: 50px;
     padding-bottom: 50px;
 
+
     &__inner {
         position: relative;
 
@@ -1321,6 +1322,10 @@
             @include fonts-rub ($fz: 35px, $fw: 400, $lh: 47px);
             color: #78C081;
             margin-top: 147px;
+        }
+
+        &-mob {
+            display: none;
         }
     }
 
@@ -1390,6 +1395,7 @@
             position: absolute;
             top: -90px;
             left: -135px;
+            transition: all 1s;
         }
     }
 
@@ -1560,11 +1566,6 @@
         }
     }
 }
-
-
-/* .swiper-slide {
-    margin-right: 30px;
-} */
 
 .swiper-slide.portfolio__content {
     max-width: 270px;
@@ -1934,6 +1935,10 @@
 
 
 /* -----------------------------MEDIA------------------------------*/
+/* -----------------------------MEDIA------------------------------*/
+
+
+/* -----------------------------MEDIA------------------------------*/
 /* ---------------------------- 1400px------------------------------*/
 @media (max-width: 1400px) {
 
@@ -1966,6 +1971,17 @@
         }
     }
 
+    /* -----------------------------Clients------------------------------*/
+
+    .clients {
+
+        &__arrows {
+            &-left {
+                margin-left: 0;
+                transition: all 1.2s;
+            }
+        }
+    }
 }
 
 /* -----------------------------MEDIA------------------------------*/
@@ -2193,6 +2209,27 @@
         }
     }
 
+    /* -----------------------------Portfolio------------------------------*/
+
+    .portfolio {
+
+        &__inner {
+
+            &::before {
+                z-index: -10;
+                top: 20px;
+                transition: all 1s;
+            }
+        }
+
+        &__header {
+            flex-direction: column;
+            &-txt {
+                margin-top: 25px;
+            }
+        }
+    }
+
 }
 
 
@@ -2407,6 +2444,143 @@
             transition: all 1s;
         }
     }
+
+    /* -----------------------------Plan------------------------------*/
+
+    .plan {
+
+        &__inner {
+            
+            &::before {
+                display: none;
+            }
+        }
+
+        &__body {
+            position: relative;
+            height: 1100px;
+            flex-direction: column;
+            align-items: center;
+
+            &-end {
+                position: absolute;
+                margin: 0;
+                bottom: 10px;
+                text-align: center;
+                font-size: 35px;
+                font-weight: 400;
+                line-height: 47px;
+                margin-top: 147px;
+
+                &::before {
+                    content: url(../images/plan/plan_signing.svg);
+                    position: absolute;
+                    z-index: -10;
+                    bottom: -50px;
+                    left: 230px;
+                }
+            }
+        }
+
+        &__steps {
+
+            &-left {
+                position: relative;
+                width: 50%;
+
+            }
+
+            &-right {
+                position: relative;
+                width: 50%;
+                margin-top: 130px;
+            }
+        }
+
+        &__left {
+            position: absolute;
+            margin: 0;
+
+            &:nth-child(1) {
+                position: relative;
+                top: 0;
+                left: 15px;
+
+                &::before {
+                    content: url(../images/plan/plan_application.svg);
+                    position: absolute;
+                    right: -20px;
+                    z-index: -10;
+                }
+                
+            }
+            &:nth-child(2) {
+                position: relative;
+                top: 188px;
+                left: 15px;
+
+                &::before {
+                    content: url(../images/plan/plan_object.svg);
+                    position: absolute;
+                    right: -20px;
+                    z-index: -10;
+                }
+            }
+            &:nth-child(3) {
+                position: relative;
+                top: 251px;
+                left: 15px;
+                
+                &::before {
+                    content: url(../images/plan/plan_treaty.svg);
+                    position: absolute;
+                    right: -20px;
+                    z-index: -10;
+                }
+            }
+
+        }
+
+        &__right {
+            position: absolute;
+            margin: 0;
+
+            &:nth-child(1) {
+                top: 0;
+                right: 15px;
+
+                &::before {
+                    content: url(../images/plan/plan_consultation.svg);
+                    position: absolute;
+                    left: -15px;
+                    z-index: -10;
+                }
+            }
+            &:nth-child(2) {
+                top: 322px;
+                right: 15px;
+
+                &::before {
+                    content: url(../images/plan/plan_schedule.svg);
+                    position: absolute;
+                    left: 0;
+                    z-index: -10;
+                }
+            }
+            &:nth-child(3) {
+                top: 680px;
+                right: 15px;
+
+                &::before {
+                    content: url(../images/plan/plan_supply.svg);
+                    position: absolute;
+                    left: 0;
+                    z-index: -10;
+                }
+            }
+        }
+    }
+
 }
 
 /* -----------------------------MEDIA------------------------------*/
@@ -2480,6 +2654,7 @@
 /* ---------------------------- 767px------------------------------*/
 
 @media (max-width: 767px) {
+    
     /* -----------------------------Sevices------------------------------*/
     .services {
         padding-bottom: 250px;
@@ -2563,6 +2738,65 @@
             height: 240px;
         }
     }
+    /* -----------------------------Plan------------------------------*/
+
+    .plan {
+        padding-bottom: 20px;
+
+        &__body {
+            &-end {
+                margin: 0;
+                position: absolute;
+                bottom: 10px;
+                width: 270px;
+                font-size: 24px;
+                line-height: 34px;
+                text-align: center;
+
+                &::before {
+                    content: url(../images/plan/plan_signing.svg);
+                    position: absolute;
+                    z-index: -10;
+                    bottom: -40px;
+                    left: 0;
+                }
+            }
+        }
+
+        &__header {
+            padding-bottom: 30px;
+        }
+
+        &__left {
+
+            &-title {
+                font-size: 24px;
+                line-height: 32px;
+            }
+
+            &-txt {
+                font-size: 14px;
+                line-height: 24px;
+            }
+        }
+
+        &__right {
+            position: absolute;
+            margin: 0;
+
+            &-title {
+                font-size: 24px;
+                line-height: 32px;
+            }
+
+            &-txt {
+                font-size: 14px;
+                line-height: 24px;
+            }
+        }
+
+    }
+    
 }
 
 /* -----------------------------MEDIA------------------------------*/
@@ -2918,6 +3152,220 @@
             margin: 0;
         }
 
+    }
+
+    /* -----------------------------Plan------------------------------*/
+
+    .plan {
+
+        &__inner {
+            
+        }
+
+        &__header {
+            @include subtitle-mob;
+        }
+
+        &__body-steps {
+            display: none;
+        }
+
+        &__body {
+            height: 940px;
+
+            &-mob {
+                position: relative;
+                display: block;
+                max-width: 390px;
+                padding: 0 10px;
+            }
+
+            &-end {
+                width: 270px;
+                font-size: 24px;
+                line-height: 34px;
+
+                &::before {
+                    bottom: -40px;
+                    left: 0;
+                }
+            }
+        }
+
+        &__steps {
+
+            &-left {
+                position: relative;
+                width: 50%;
+
+            }
+
+            &-right {
+                position: relative;
+                width: 50%;
+                margin-top: 130px;
+            }
+        }
+
+        &__left {
+
+            &:nth-child(1) {
+                position: relative;
+                top: 0;
+                left: -15px;
+                width: auto;
+
+                &::before {
+                    content: url(../images/plan/plan_application.svg);
+                    position: absolute;
+                    right: -3px;
+                    z-index: -10;
+                }
+                
+            }
+            &:nth-child(2) {
+                position: relative;
+                top: 165px;
+                left: -15px;
+                width: auto;
+
+                &::before {
+                    content: url(../images/plan/plan_object.svg);
+                    position: absolute;
+                    right: -3px;
+                    z-index: -10;
+                }
+            }
+            &:nth-child(3) {
+                position: relative;
+                top: 181px;
+                left: -15px;
+                width: auto;
+                
+                &::before {
+                    content: url(../images/plan/plan_treaty.svg);
+                    position: absolute;
+                    right: -3px;
+                    z-index: -10;
+                }
+            }
+        }
+
+        &__right {
+
+            &:nth-child(4) {
+                position: relative;
+                top: -360px;
+                right: 15px;
+                width: auto;
+
+                &::before {
+                    content: url(../images/plan/plan_consultation.svg);
+                    position: absolute;
+                    left: -1px;
+                    z-index: -10;
+                }
+            }
+            &:nth-child(5) {
+                position: relative;
+                top: -200px;
+                right: 16px;
+                width: auto;
+
+                &::before {
+                    content: url(../images/plan/plan_schedule.svg);
+                    position: absolute;
+                    left: 0;
+                    z-index: -10;
+                }
+            }
+            &:nth-child(6) {
+                position: relative;
+                top: -53px;
+                right: 16px;
+                width: auto;
+
+                &::before {
+                    content: url(../images/plan/plan_supply.svg);
+                    position: absolute;
+                    left: 0;
+                    z-index: -10;
+                }
+            }
+        }
+    }
+
+    /* -----------------------------Portfolio-----------------------------*/
+
+    .portfolio {
+
+        padding-bottom: 20px;
+
+        &__inner {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            &::before {
+                top: 127px;
+                transition: all 1s;
+            }
+        }
+
+        &__header {
+
+            align-items: baseline;
+
+            &-title {
+                @include subtitle-mob;
+            }
+
+            &-txt {
+                font-size: 14px;
+                line-height: 24px;
+            }
+        }
+
+        &__body {
+            width: 320px;
+        }
+
+        &__content {
+
+            & img {
+                width: 319px;
+                height: 419px;
+            }
+        }
+
+        &__container-arrows {
+            position: absolute;
+            margin: 0;
+            bottom: -36px;
+        }
+    }
+
+    .swiper-slide.portfolio__content {
+        max-width: 319px;
+    }
+    
+    .swiper-slide-active.swiper-slide {
+        & img {
+            width: 319px;
+        }
+    }
+    
+    .swiper-slide-next.swiper-slide {
+        margin-left: 0px;
+    }
+    
+    .swiper-slide-prev.swiper-slide {
+        min-width: auto;
+    
+        & img {
+            width: 319px;
+        }
     }
 
 }

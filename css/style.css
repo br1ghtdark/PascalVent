@@ -1618,6 +1618,9 @@ a {
   color: #78C081;
   margin-top: 147px;
 }
+.plan__body-mob {
+  display: none;
+}
 .plan__left {
   margin-bottom: 220px;
 }
@@ -1690,6 +1693,9 @@ a {
   position: absolute;
   top: -90px;
   left: -135px;
+  -webkit-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
 }
 .portfolio__header {
   display: -webkit-box;
@@ -1893,9 +1899,6 @@ a {
   color: #FFFFFF;
 }
 
-/* .swiper-slide {
-    margin-right: 30px;
-} */
 .swiper-slide.portfolio__content {
   max-width: 270px;
 }
@@ -2284,6 +2287,8 @@ a {
 }
 
 /* -----------------------------MEDIA------------------------------*/
+/* -----------------------------MEDIA------------------------------*/
+/* -----------------------------MEDIA------------------------------*/
 /* ---------------------------- 1400px------------------------------*/
 @media (max-width: 1400px) {
   /* -----------------------------Header_body------------------------------*/
@@ -2305,6 +2310,13 @@ a {
     -webkit-transition: all 2s;
     -o-transition: all 2s;
     transition: all 2s;
+  }
+  /* -----------------------------Clients------------------------------*/
+  .clients__arrows-left {
+    margin-left: 0;
+    -webkit-transition: all 1.2s;
+    -o-transition: all 1.2s;
+    transition: all 1.2s;
   }
 }
 /* -----------------------------MEDIA------------------------------*/
@@ -2488,6 +2500,23 @@ a {
   }
   .comfort__images {
     display: none;
+  }
+  /* -----------------------------Portfolio------------------------------*/
+  .portfolio__inner::before {
+    z-index: -10;
+    top: 20px;
+    -webkit-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+  }
+  .portfolio__header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .portfolio__header-txt {
+    margin-top: 25px;
   }
 }
 /* -----------------------------MEDIA------------------------------*/
@@ -2722,6 +2751,118 @@ a {
     -o-transition: all 1s;
     transition: all 1s;
   }
+  /* -----------------------------Plan------------------------------*/
+  .plan__inner::before {
+    display: none;
+  }
+  .plan__body {
+    position: relative;
+    height: 1100px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .plan__body-end {
+    position: absolute;
+    margin: 0;
+    bottom: 10px;
+    text-align: center;
+    font-size: 35px;
+    font-weight: 400;
+    line-height: 47px;
+    margin-top: 147px;
+  }
+  .plan__body-end::before {
+    content: url(../images/plan/plan_signing.svg);
+    position: absolute;
+    z-index: -10;
+    bottom: -50px;
+    left: 230px;
+  }
+  .plan__steps-left {
+    position: relative;
+    width: 50%;
+  }
+  .plan__steps-right {
+    position: relative;
+    width: 50%;
+    margin-top: 130px;
+  }
+  .plan__left {
+    position: absolute;
+    margin: 0;
+  }
+  .plan__left:nth-child(1) {
+    position: relative;
+    top: 0;
+    left: 15px;
+  }
+  .plan__left:nth-child(1)::before {
+    content: url(../images/plan/plan_application.svg);
+    position: absolute;
+    right: -20px;
+    z-index: -10;
+  }
+  .plan__left:nth-child(2) {
+    position: relative;
+    top: 188px;
+    left: 15px;
+  }
+  .plan__left:nth-child(2)::before {
+    content: url(../images/plan/plan_object.svg);
+    position: absolute;
+    right: -20px;
+    z-index: -10;
+  }
+  .plan__left:nth-child(3) {
+    position: relative;
+    top: 251px;
+    left: 15px;
+  }
+  .plan__left:nth-child(3)::before {
+    content: url(../images/plan/plan_treaty.svg);
+    position: absolute;
+    right: -20px;
+    z-index: -10;
+  }
+  .plan__right {
+    position: absolute;
+    margin: 0;
+  }
+  .plan__right:nth-child(1) {
+    top: 0;
+    right: 15px;
+  }
+  .plan__right:nth-child(1)::before {
+    content: url(../images/plan/plan_consultation.svg);
+    position: absolute;
+    left: -15px;
+    z-index: -10;
+  }
+  .plan__right:nth-child(2) {
+    top: 322px;
+    right: 15px;
+  }
+  .plan__right:nth-child(2)::before {
+    content: url(../images/plan/plan_schedule.svg);
+    position: absolute;
+    left: 0;
+    z-index: -10;
+  }
+  .plan__right:nth-child(3) {
+    top: 680px;
+    right: 15px;
+  }
+  .plan__right:nth-child(3)::before {
+    content: url(../images/plan/plan_supply.svg);
+    position: absolute;
+    left: 0;
+    z-index: -10;
+  }
 }
 /* -----------------------------MEDIA------------------------------*/
 /* ---------------------------- 1000px------------------------------*/
@@ -2830,6 +2971,49 @@ a {
     rotate: -90deg;
     width: 520px;
     height: 240px;
+  }
+  /* -----------------------------Plan------------------------------*/
+  .plan {
+    padding-bottom: 20px;
+  }
+  .plan__body-end {
+    margin: 0;
+    position: absolute;
+    bottom: 10px;
+    width: 270px;
+    font-size: 24px;
+    line-height: 34px;
+    text-align: center;
+  }
+  .plan__body-end::before {
+    content: url(../images/plan/plan_signing.svg);
+    position: absolute;
+    z-index: -10;
+    bottom: -40px;
+    left: 0;
+  }
+  .plan__header {
+    padding-bottom: 30px;
+  }
+  .plan__left-title {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .plan__left-txt {
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .plan__right {
+    position: absolute;
+    margin: 0;
+  }
+  .plan__right-title {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .plan__right-txt {
+    font-size: 14px;
+    line-height: 24px;
   }
 }
 /* -----------------------------MEDIA------------------------------*/
@@ -3124,6 +3308,182 @@ a {
   }
   .comfort__svg {
     margin: 0;
+  }
+  /* -----------------------------Plan------------------------------*/
+  .plan__header {
+    font-family: "Ruberoid";
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 38px;
+    color: #495E4C;
+  }
+  .plan__body-steps {
+    display: none;
+  }
+  .plan__body {
+    height: 940px;
+  }
+  .plan__body-mob {
+    position: relative;
+    display: block;
+    max-width: 390px;
+    padding: 0 10px;
+  }
+  .plan__body-end {
+    width: 270px;
+    font-size: 24px;
+    line-height: 34px;
+  }
+  .plan__body-end::before {
+    bottom: -40px;
+    left: 0;
+  }
+  .plan__steps-left {
+    position: relative;
+    width: 50%;
+  }
+  .plan__steps-right {
+    position: relative;
+    width: 50%;
+    margin-top: 130px;
+  }
+  .plan__left:nth-child(1) {
+    position: relative;
+    top: 0;
+    left: -15px;
+    width: auto;
+  }
+  .plan__left:nth-child(1)::before {
+    content: url(../images/plan/plan_application.svg);
+    position: absolute;
+    right: -3px;
+    z-index: -10;
+  }
+  .plan__left:nth-child(2) {
+    position: relative;
+    top: 165px;
+    left: -15px;
+    width: auto;
+  }
+  .plan__left:nth-child(2)::before {
+    content: url(../images/plan/plan_object.svg);
+    position: absolute;
+    right: -3px;
+    z-index: -10;
+  }
+  .plan__left:nth-child(3) {
+    position: relative;
+    top: 181px;
+    left: -15px;
+    width: auto;
+  }
+  .plan__left:nth-child(3)::before {
+    content: url(../images/plan/plan_treaty.svg);
+    position: absolute;
+    right: -3px;
+    z-index: -10;
+  }
+  .plan__right:nth-child(4) {
+    position: relative;
+    top: -360px;
+    right: 15px;
+    width: auto;
+  }
+  .plan__right:nth-child(4)::before {
+    content: url(../images/plan/plan_consultation.svg);
+    position: absolute;
+    left: -1px;
+    z-index: -10;
+  }
+  .plan__right:nth-child(5) {
+    position: relative;
+    top: -200px;
+    right: 16px;
+    width: auto;
+  }
+  .plan__right:nth-child(5)::before {
+    content: url(../images/plan/plan_schedule.svg);
+    position: absolute;
+    left: 0;
+    z-index: -10;
+  }
+  .plan__right:nth-child(6) {
+    position: relative;
+    top: -53px;
+    right: 16px;
+    width: auto;
+  }
+  .plan__right:nth-child(6)::before {
+    content: url(../images/plan/plan_supply.svg);
+    position: absolute;
+    left: 0;
+    z-index: -10;
+  }
+  /* -----------------------------Portfolio-----------------------------*/
+  .portfolio {
+    padding-bottom: 20px;
+  }
+  .portfolio__inner {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .portfolio__inner::before {
+    top: 127px;
+    -webkit-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+  }
+  .portfolio__header {
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+  .portfolio__header-title {
+    font-family: "Ruberoid";
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 38px;
+    color: #495E4C;
+  }
+  .portfolio__header-txt {
+    font-size: 14px;
+    line-height: 24px;
+  }
+  .portfolio__body {
+    width: 320px;
+  }
+  .portfolio__content img {
+    width: 319px;
+    height: 419px;
+  }
+  .portfolio__container-arrows {
+    position: absolute;
+    margin: 0;
+    bottom: -36px;
+  }
+  .swiper-slide.portfolio__content {
+    max-width: 319px;
+  }
+  .swiper-slide-active.swiper-slide img {
+    width: 319px;
+  }
+  .swiper-slide-next.swiper-slide {
+    margin-left: 0px;
+  }
+  .swiper-slide-prev.swiper-slide {
+    min-width: auto;
+  }
+  .swiper-slide-prev.swiper-slide img {
+    width: 319px;
   }
 }
 /* -----------------------------MEDIA------------------------------*/

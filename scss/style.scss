@@ -351,6 +351,8 @@
 /*========================Header__Top=================*/
 
 .header {
+    display: flex;
+    flex-direction: column;
     background: 700px 0px / auto no-repeat url("../images/header/header__picture.jpg"),
         linear-gradient(180deg,
             #F1F1F1 0%, #F0F2F1 16.25%, #EBEDEC 43.26%,
@@ -361,14 +363,15 @@
         padding-top: 26px;
 
         &--fixed {
+            align-self: center;
             position: fixed;
-            left: calc(50% - 720px);
             top: 0;
             z-index: 100;
-            width: 1440px;
+            width: 100%;
             height: 114px;
             background: #D9FADD;
             border-radius: 0px 0px 70px 70px;
+            transition: all 1s;
         }
 
         &-popup {
@@ -401,16 +404,19 @@
 
     &__top-logo {
         margin-right: 156px;
+        transition: all 1s;
     }
 
     &__menu {
         display: flex;
         min-width: 646px;
         margin-right: 142px;
+        transition: all 1s;
     }
 
     &__menu-item {
         margin-right: 40px;
+        transition: all 1s;
     }
 
     &__menu-a {
@@ -575,6 +581,13 @@
             $fz: 14px, $fw: 400, $lh: 100%);
         border-radius: 40px 0 0 0;
         box-shadow: -5px -5px 0px 5px #D9FADD;
+
+        &.active .services__btn-fan  {
+            &::after {
+                content: url(../images/services/services_fan.svg);
+                transition: all 1s;
+            }
+        }
     }
 
     &__tabs-cond {
@@ -583,6 +596,13 @@
             $fz: 14px, $fw: 400, $lh: 100%);
         border-radius: 0 0 0 40px;
         box-shadow: -5px 5px 0px 5px #D9FADD;
+
+        &.active .services__btn-cond  {
+            &::after {
+                content: url(../images/services/services_cond-white.svg);
+                transition: all 1s;
+            }
+        }
     }
 
     &__btn-def.active {
@@ -601,9 +621,10 @@
 
         &::after {
             position: absolute;
-            content: url(../images/services/services_fan.svg);
+            content: url(../images/services/services_fan-white.svg);
             right: -50px;
             top: -8px;
+            transition: all 1s;
         }
     }
 
@@ -650,7 +671,6 @@
         margin-left: 89px;
         padding-top: 113px;
         padding-bottom: 114px;
-        /* transition: .5s all; */
     }
 
     &__fan-txt {
@@ -746,6 +766,7 @@
         content: url(../images/services/conditioner_6.svg);
     }
 }
+
 
 /*=============================Key===============================*/
 /*=============================Key===============================*/
@@ -1957,6 +1978,8 @@
     .header {
         &__top-logo {
             margin-right: 56px;
+            margin-left: 25px;
+            transition: all 1s;
         }
     }
 
@@ -2004,13 +2027,16 @@
     .header {
         &__top-logo {
             margin-right: 36px;
+            transition: all 1s;
         }
 
         &__menu {
             margin-right: 42px;
+            transition: all 1s;
 
             &-item {
                 margin-right: 30px;
+                transition: all 1s;
             }
         }
     }
@@ -2034,10 +2060,17 @@
         }
 
         &__content {
-            height: 655px;
-            width: 740px;
-            &-block.active {
+            display: flex;
+
+            &-block {
+                height: 655px;
+                width: 740px;
                 border-radius: 65px;
+                position: relative;
+
+                &.active {
+                    display: flex;
+                }
             }
         }
 
@@ -2049,7 +2082,19 @@
         }
 
         &__container {
+            position: absolute;
+            top: 88px;
+            left: 65px;
             rotate: -90deg;
+            padding: 0;
+            margin: 0;
+            height: 400px;
+            justify-content: flex-start;
+            
+        }
+
+        &__fan-txt {
+            margin-bottom: 15px;
             
         }
 
@@ -2074,6 +2119,25 @@
                 height: 240px;
                 border-radius: 65px;
                 box-shadow: 0px -4px 8px rgba(15,44,15,.35);
+            }
+        }
+
+        &__cond {
+
+            &-pic1 {
+                margin-bottom: 20px;
+            }
+            &-pic2 {
+                margin-bottom: 20px;
+            }
+            &-pic3 {
+                margin-bottom: 20px;
+            }
+            &-pic4 {
+                margin-bottom: 20px;
+            }
+            &-pic5 {
+                margin-bottom: 20px;
             }
         }
     }
@@ -2110,10 +2174,12 @@
     .header {
         &__top-logo {
             margin-right: 20px;
+            transition: all 1s;
         }
 
         &__menu {
-            margin-right: 0px;
+            margin-right: -25px;
+            transition: all 1s;
         }
     }
 
@@ -2391,7 +2457,6 @@
             &-inner {
                 flex-direction: column;
                 max-width: 320px;
-                align-items: center;
             }
 
             &--open {
@@ -2407,6 +2472,8 @@
             flex-direction: column;
             align-items: center;
             margin-top: 85px;
+            min-width: auto;
+            margin-right: 6px;
 
             &-item {
                 margin-right: 0;
@@ -2814,7 +2881,7 @@
         &__container {
             padding-left: 113px;
             max-width: 402px;
-            margin-left: 45px;
+            margin-left: -40px;
         }
 
         &__tabs {
@@ -3034,7 +3101,7 @@
 
         &__container {
             position: absolute;
-            right: 240px;
+            left: 130px;
             top: -10px;
             padding: 0 0 0 0;
             margin: 0 0 0 0;
@@ -3078,6 +3145,7 @@
             &-txt {
                 font-size: 16px;
                 line-height: 26px;
+                margin-bottom: 27px;
 
                 &::before {
                     left: -45px;

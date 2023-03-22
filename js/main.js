@@ -7,14 +7,16 @@ console.log(header__topHeight)
 window.addEventListener('scroll', () => {
 	let scrollDistance = window.scrollY;
 
-	if (scrollDistance >= header__bodyHeight + header__topHeight) {
+	if (scrollDistance >= header__bodyHeight + header__topHeight && document.documentElement.clientWidth > 1100) {
 		header__top.classList.add('header__top--fixed');
 		header__body.style.marginTop = `${header__topHeight}px`;
-	} else {
+	}
+    else {
 		header__top.classList.remove('header__top--fixed');
 		header__body.style.marginTop = null;
 	}
 })
+
 /*========================Header========================*/
 
 /*=========================Burger_menu========================*/
@@ -142,7 +144,7 @@ new Swiper('.clients__slider', {
         nextEl: ".clients__arrows-right",
         prevEl: ".clients__arrows-left"
     },
-    speed: 1000,
+    speed: 1300,
 });
 /*=========================Clients_slider========================*/
 

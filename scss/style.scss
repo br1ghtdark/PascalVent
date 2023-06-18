@@ -353,10 +353,15 @@
 .header {
     display: flex;
     flex-direction: column;
-    background: 700px 0px / auto no-repeat url("../images/header/header__picture.jpg"),
-        linear-gradient(180deg,
-            #F1F1F1 0%, #F0F2F1 16.25%, #EBEDEC 43.26%,
-            #E6E8E7 72.5%, #DEE2E1 100%);
+    background: linear-gradient(180deg,
+    #F1F1F1 0%, #F0F2F1 16.25%, #EBEDEC 43.26%,
+    #E6E8E7 72.5%, #DEE2E1 100%);
+
+    &__inner {
+        background: 700px 0px / auto no-repeat 
+        url("../images/header/header__picture.jpg");
+        transition: all 1s;
+    }
 
     &__top {
         position: relative;
@@ -774,18 +779,19 @@
 .key {
     position: relative;
 
-    &::after {
-        position: absolute;
-        content: url(../images/key/key_background.svg);
-        left: 100px;
-        top: 100px;
-        z-index: -1;
-    }
-
     &__inner {
         position: relative;
         padding-top: 50px;
         padding-bottom: 50px;
+
+        &::after {
+            position: absolute;
+            content: url(../images/key/key_background.svg);
+            left: -120px;
+            top: 100px;
+            z-index: -1;
+            transition: all 1s;
+        }
     }
 
     &__header {
@@ -1786,6 +1792,7 @@
             position: absolute;
             z-index: -1;
             left: -135px;
+            transition: all 1s;
         }
     }
 
@@ -2177,6 +2184,12 @@
             transition: all 1s;
         }
 
+        &__inner {
+            background: 500px 0px / auto no-repeat 
+            url("../images/header/header__picture.jpg");
+            transition: all 1s;
+        }
+
         &__menu {
             margin-right: -25px;
             transition: all 1s;
@@ -2188,7 +2201,7 @@
     .key {
 
         &__inner {
-            padding-bottom: 400px;
+            padding-bottom: 200px;
         }
         &__content {
             &-block {
@@ -2443,6 +2456,13 @@
     }
 
     .header {
+
+        &__inner {
+            background: 300px 0px / auto no-repeat 
+            url("../images/header/header__picture.jpg");
+            transition: all 1s;
+        }
+
         &__top {
             top: 0;
             right: 0;
@@ -2525,6 +2545,7 @@
     /* -----------------------------About------------------------------*/
 
     .about {
+        padding-bottom: 20px;
 
         &__inner {
             flex-direction: column;
@@ -2752,7 +2773,9 @@
 
     .footer {
         background: url(../images/footer/Vector.svg);
-        background-color: rgba(183, 183, 183, .3);
+        background-color: rgba(183, 183, 183, .1);
+        background-position: -736px 106px;
+        transition: all 1s;
 
         &__inner {
             flex-direction: column;
@@ -2844,7 +2867,18 @@
     .key {
 
         &__inner {
+            padding-bottom: 400px;
+
+            &::after {
+                position: absolute;
+                content: url(../images/key/key_back-mob.svg);
+                left: 30%;
+                top: 130px;
+                z-index: -1;
+                transition: all 1s;
+            }
         }
+
         &__content {
             &-block {
                 grid-template: 1fr 1fr 1fr 1fr/ 1fr 1fr;
@@ -2855,6 +2889,29 @@
         &__cell {
         }
     }
+}
+
+/* -----------------------------MEDIA------------------------------*/
+/* ---------------------------- 900px------------------------------*/
+
+@media (max-width: 800px) {
+        /* -----------------------------Key------------------------------*/
+
+        .key {
+
+            &__inner {
+    
+                &::after {
+                    position: absolute;
+                    content: url(../images/key/key_back-mob.svg);
+                    left: 25%;
+                    top: 130px;
+                    z-index: -1;
+                    transition: all 1s;
+                }
+            }
+
+        }
 }
 
 /* -----------------------------MEDIA------------------------------*/
@@ -3029,6 +3086,14 @@
     }
 
     .header {
+        background: linear-gradient(270deg, #F2F2F2 0.09%, #F0F2F1 17.41%, #EFEFEF 35.53%, #EAECEB 51.42%, #E7E8EA 66.94%, #E2E6E5 82.21%, #DEE2E1 99.91%);
+
+        &__inner {
+            background: 0px 650px / 600px no-repeat 
+            url("../images/header/header__pic-mob.jpg");
+            transition: all 1s;
+        }
+        
         &__body {
 
             &-company {
@@ -3177,7 +3242,14 @@
     .key {
 
         &__inner {
-            padding-bottom: 70px;
+            padding-bottom: 20px;
+
+            &::after {
+                content: url(../images/key/key_back-mob.svg);
+                left: 18%;
+                top: 173px;
+                transition: all 1s;
+            }
         }
         
         &__header {
@@ -3724,6 +3796,13 @@
 
     /* -----------------------------Header_body------------------------------*/
     .header {
+
+        &__inner {
+            background: 0px 610px / contain no-repeat 
+            url("../images/header/header__pic-mob.jpg");
+            transition: all 1s;
+        }
+
         &__body {
             &-text {
                 width: 290px;
@@ -3795,4 +3874,19 @@
             }
         }
     }
+
+    /* -----------------------------Key------------------------------*/
+
+    .key {
+        &__inner {
+
+            &::after {
+                content: url(../images/key/key_back-mob.svg);
+                left: 5%;
+                top: 173px;
+                transition: all 1s;
+            }
+        }
+    }
+
 }
